@@ -69,28 +69,27 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenTerminal }) => {
             </div>
 
             {/* Value Proposition Description */}
-            <p className="text-base sm:text-lg text-slate-400 leading-relaxed max-w-2xl">
-              I architect high-converting{' '}
-              <strong className="text-slate-100 font-semibold">GoHighLevel (GHL)</strong> CRM ecosystems, multi-branch workflow automations, custom agency snapshots, and API v2 webhooks — backed by 5+ years of full-stack software development rigor.
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+              Stop losing leads to slow follow-ups. I build simple, reliable <strong className="text-cyan-400 font-semibold">GoHighLevel</strong> systems that reply to new inquiries in seconds, book calls directly on your calendar, and keep your sales pipeline moving on autopilot.
             </p>
 
-            {/* Key Value Points for Employers */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-xs sm:text-sm text-slate-300">
+            {/* Key Value Points for Clients */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 text-xs sm:text-sm text-slate-200">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                <span>GoHighLevel Workflows, Snapshots & SaaS Mode</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Instant text & email reply in under 45 seconds</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                <span>GHL API v2, Webhooks & Custom Code (JS/CSS)</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Hands-free calendar booking & reminder texts</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                <span>A2P 10DLC & LC Email/Phone Deliverability (99.8%)</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Done-for-you agency setups ready in minutes</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                <span>Sub-45s Speed-to-Lead & High-Converting Funnels</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span>Messages land straight in the inbox (never spam)</span>
               </div>
             </div>
 
@@ -101,25 +100,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenTerminal }) => {
                 id="hero-ghl-showcase-btn"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all transform active:scale-98"
               >
-                Explore GoHighLevel Mastery
+                See How It Works
                 <ArrowDown className="w-4 h-4" />
-              </a>
-
-              <a
-                href="#projects"
-                id="hero-explore-projects-btn"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-100 font-medium text-sm border border-slate-700 hover:border-slate-600 transition-all active:scale-98"
-              >
-                Projects & Work
               </a>
 
               <a
                 href="#contact"
                 id="hero-contact-btn"
-                className="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-slate-900/60 hover:bg-slate-800/80 text-slate-300 hover:text-white font-medium text-sm border border-slate-800 hover:border-slate-700 transition-all"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-100 font-medium text-sm border border-slate-700 hover:border-slate-600 transition-all active:scale-98"
               >
                 <Mail className="w-4 h-4 text-cyan-400" />
-                Contact Me
+                Let's Talk About Your Project
               </a>
 
               <button
@@ -128,7 +119,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenTerminal }) => {
                 className="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-slate-900/60 hover:bg-slate-800/80 text-slate-300 hover:text-white font-medium text-sm border border-slate-800 hover:border-slate-700 transition-all"
               >
                 <FileText className="w-4 h-4 text-cyan-400" />
-                Resume
+                View Resume
               </button>
 
               <button
@@ -172,10 +163,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenTerminal }) => {
                   <div className="w-3 h-3 rounded-full bg-rose-500/80" />
                   <div className="w-3 h-3 rounded-full bg-amber-500/80" />
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                  <span className="ml-2 text-xs font-mono text-slate-400">ghl-specialist.config.ts</span>
+                  <span className="ml-2 text-xs font-mono text-slate-400">client-results.config.ts</span>
                 </div>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-400">
-                  GHL_VERIFIED_EXPERT
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  GUARANTEED_RESULTS
                 </span>
               </div>
 
@@ -183,31 +174,30 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenTerminal }) => {
               <pre className="font-mono text-xs text-slate-300 leading-relaxed overflow-x-auto selection:bg-cyan-500/30">
                 <code>
                   <span className="text-purple-400">const</span>{' '}
-                  <span className="text-blue-400">ghlSpecialist</span> = &#123;{'\n'}
-                  {'  '}name: <span className="text-emerald-300">'{PERSONAL_INFO.name}'</span>,{'\n'}
-                  {'  '}role: <span className="text-emerald-300">'{PERSONAL_INFO.title}'</span>,{'\n'}
-                  {'  '}ghlStack: [<span className="text-amber-300">'Workflows & AI'</span>, <span className="text-amber-300">'Custom Snapshots'</span>, <span className="text-amber-300">'SaaS Mode'</span>],{'\n'}
-                  {'  '}compliance: [<span className="text-cyan-300">'A2P 10DLC'</span>, <span className="text-cyan-300">'LC Phone'</span>, <span className="text-cyan-300">'LC Email (DMARC/DKIM)'</span>],{'\n'}
-                  {'  '}customCode: [<span className="text-cyan-300">'GHL API v2'</span>, <span className="text-cyan-300">'Webhooks'</span>, <span className="text-cyan-300">'JavaScript/CSS'</span>],{'\n'}
-                  {'  '}benchmarks: &#123; speedToLead: <span className="text-emerald-300">'&lt;45s'</span>, deliverability: <span className="text-emerald-300">'99.8%'</span> &#125;,{'\n'}
-                  {'  '}status: <span className="text-emerald-400">'OPEN_TO_NEW_CLIENTS_AND_ROLES'</span>{'\n'}
+                  <span className="text-blue-400">myPromiseToYourBusiness</span> = &#123;{'\n'}
+                  {'  '}leadReplyTime: <span className="text-emerald-300">'Under 45 seconds'</span>,{'\n'}
+                  {'  '}calendarBooking: <span className="text-emerald-300">'100% automated'</span>,{'\n'}
+                  {'  '}appointmentReminders: <span className="text-emerald-300">'Cut no-shows by 50%'</span>,{'\n'}
+                  {'  '}messageDelivery: <span className="text-emerald-300">'99.8% inbox rate'</span>,{'\n'}
+                  {'  '}wastedHours: <span className="text-emerald-300">'0 manual follow-ups needed'</span>,{'\n'}
+                  {'  '}bottomLine: <span className="text-amber-300">'More booked calls & higher revenue'</span>{'\n'}
                   &#125;;{'\n\n'}
-                  <span className="text-slate-500">// Ready to automate & scale operations</span>{'\n'}
-                  <span className="text-purple-400">export default</span> <span className="text-blue-400">ghlSpecialist</span>;
+                  <span className="text-slate-500">// Built to run 24/7 without breaking</span>{'\n'}
+                  <span className="text-purple-400">export default</span> <span className="text-blue-400">myPromiseToYourBusiness</span>;
                 </code>
               </pre>
 
               {/* Quick interactive mini-badge */}
               <div className="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
                 <span className="flex items-center gap-1.5">
-                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-                  GHL Workflows: 60+ Active | Speed: &lt;45s
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Avg. Reply: &lt; 45s | Inbox: 99.8%
                 </span>
                 <a
                   href="#ghl-showcase"
                   className="text-cyan-400 hover:text-cyan-300 flex items-center gap-1"
                 >
-                  explore GHL &rarr;
+                  see how &rarr;
                 </a>
               </div>
             </div>

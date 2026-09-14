@@ -76,13 +76,13 @@ export const GHLShowcase: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-mono text-xs uppercase tracking-wider mb-3 font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-            <span>GoHighLevel (GHL) Specialist Specialization</span>
+            <span>GoHighLevel Made Simple</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            GoHighLevel Architecture & Automations
+            Automations That Win You More Clients
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base mt-3 leading-relaxed">
-            High-converting CRM engineering for agencies and businesses. I combine deep GoHighLevel platform mastery with software engineering skills to build automations, snapshots, and custom API integrations that drive revenue.
+          <p className="text-slate-300 text-sm sm:text-base mt-3 leading-relaxed">
+            Simple, powerful setups that answer your leads instantly, book appointments while you sleep, and organize your client pipeline without extra headaches.
           </p>
         </div>
 
@@ -157,7 +157,7 @@ export const GHLShowcase: React.FC = () => {
               {/* Metric Card */}
               <div className="p-4 bg-slate-950/70 border border-slate-800 rounded-xl">
                 <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wide">
-                  Verified Agency Impact
+                  Real Results For Clients
                 </span>
                 <div className="text-base sm:text-lg font-bold font-mono text-cyan-300 mt-0.5">
                   {activePillar.metrics}
@@ -169,7 +169,7 @@ export const GHLShowcase: React.FC = () => {
                   href="#contact"
                   className="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
                 >
-                  <span>Discuss this for your agency / business</span>
+                  <span>Want this setup for your business? Let's chat</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -179,7 +179,7 @@ export const GHLShowcase: React.FC = () => {
             <div className="lg:col-span-7 bg-slate-950/60 border border-slate-800/80 rounded-xl p-5 sm:p-6">
               <h4 className="text-xs font-mono uppercase text-slate-400 tracking-wider mb-4 flex items-center gap-2">
                 <Layers className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Technical Implementation Deliverables</span>
+                <span>What You Get When We Work Together</span>
               </h4>
 
               <ul className="space-y-3">
@@ -203,13 +203,13 @@ export const GHLShowcase: React.FC = () => {
             <div>
               <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-widest font-semibold mb-1">
                 <Workflow className="w-4 h-4" />
-                <span>Interactive Workflow Simulator</span>
+                <span>Live Interactive Demo</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white">
-                Speed-to-Lead & Appointment Booking Logic Engine
+                How Your Inquiries Turn Into Booked Calls
               </h3>
-              <p className="text-xs sm:text-sm text-slate-400 mt-1">
-                Test how an automated GoHighLevel workflow processes new leads, branches on replies, and coordinates AI booking.
+              <p className="text-xs sm:text-sm text-slate-300 mt-1">
+                Click below to see how new leads get contacted and booked on your calendar in seconds, with 0 manual effort.
               </p>
             </div>
 
@@ -225,7 +225,7 @@ export const GHLShowcase: React.FC = () => {
                 }`}
               >
                 <Play className="w-3 h-3" />
-                <span>Lead Replies (Fast)</span>
+                <span>When Lead Replies (Fast Booking)</span>
               </button>
 
               <button
@@ -238,7 +238,7 @@ export const GHLShowcase: React.FC = () => {
                 }`}
               >
                 <RotateCcw className="w-3 h-3" />
-                <span>No Reply (Nurture)</span>
+                <span>If No Reply (Auto Nurture)</span>
               </button>
             </div>
           </div>
@@ -259,13 +259,13 @@ export const GHLShowcase: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-white">Trigger: Inbound Lead Opt-In</span>
+                    <span className="text-xs font-bold text-white">Step 1: New Lead Arrives</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                      GHL Funnel Form / Facebook Lead Ad
+                      Website Form, Facebook, or Instagram
                     </span>
                   </div>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    Contact data captured: Name, Email, Phone, Company, and Custom Inbound Notes.
+                  <p className="text-xs text-slate-300 mt-0.5">
+                    A potential client submits their name, phone number, and what they need.
                   </p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export const GHLShowcase: React.FC = () => {
               <div className="text-right sm:text-right shrink-0">
                 <span className="text-[11px] font-mono text-emerald-400 flex items-center sm:justify-end gap-1">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  Instant Trigger (0.0s)
+                  Instant Notification
                 </span>
               </div>
             </div>
@@ -292,13 +292,13 @@ export const GHLShowcase: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-white">Action: Automated Speed-to-Lead SMS & Internal Tagging</span>
+                    <span className="text-xs font-bold text-white">Step 2: Instant Personalized Text & Email Sent</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
-                      LC Phone SMS & Pipeline Move
+                      Under 45 Seconds
                     </span>
                   </div>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    Fires dynamic greeting SMS with custom values: <code className="text-cyan-300 font-mono text-[11px]">"Hey &#123;&#123;contact.first_name&#125;&#125;, saw you requested info..."</code>
+                  <p className="text-xs text-slate-300 mt-0.5">
+                    Your system texts them immediately while they are still thinking about you: <span className="text-cyan-300 italic text-[11px]">"Hey John, saw you just asked for details! When's a good time to chat?"</span>
                   </p>
                 </div>
               </div>
@@ -306,7 +306,7 @@ export const GHLShowcase: React.FC = () => {
               <div className="text-right sm:text-right shrink-0">
                 <span className="text-[11px] font-mono text-cyan-400 flex items-center sm:justify-end gap-1">
                   <Zap className="w-3.5 h-3.5" />
-                  Speed-to-Lead: &lt; 38s
+                  Fastest in your industry
                 </span>
               </div>
             </div>
@@ -325,12 +325,12 @@ export const GHLShowcase: React.FC = () => {
                     03
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-white">If/Else Condition: Did Lead Reply or Book Within 5 Minutes?</span>
-                    <p className="text-xs text-slate-400">Listens for inbound SMS reply webhook or calendar appointment booked event</p>
+                    <span className="text-xs font-bold text-white">Step 3: Smart Routing Based On What The Lead Does</span>
+                    <p className="text-xs text-slate-400">The system automatically listens for their reply or calendar booking</p>
                   </div>
                 </div>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20">
-                  Conditional Router
+                  Smart Decision
                 </span>
               </div>
 
@@ -347,14 +347,14 @@ export const GHLShowcase: React.FC = () => {
                   <div className="flex items-center justify-between mb-1.5">
                     <span className="text-xs font-bold flex items-center gap-1.5 text-emerald-400">
                       <Bot className="w-3.5 h-3.5" />
-                      Branch YES &rarr; Conversation AI & Calendar Booking
+                      If Lead Replies &rarr; Instant Booking Link Sent
                     </span>
                     <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-300">
-                      High Intent
+                      Ready To Buy
                     </span>
                   </div>
                   <p className="text-[11px] leading-relaxed">
-                    AI responds to custom questions, handles objection logic, and routes directly to Google/Outlook calendar slot. Sends calendar confirmation and Google Maps link.
+                    The system answers their questions, offers convenient times, and locks the appointment onto your Google or Outlook calendar with reminder texts.
                   </p>
                 </div>
 
@@ -369,14 +369,14 @@ export const GHLShowcase: React.FC = () => {
                   <div className="flex items-center justify-between mb-1.5">
                     <span className="text-xs font-bold flex items-center gap-1.5 text-amber-400">
                       <PhoneCall className="w-3.5 h-3.5" />
-                      Branch NO &rarr; Ringless Voicemail + Nurture Flow
+                      If No Reply &rarr; Gentle Follow-Up On Autopilot
                     </span>
                     <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-300">
-                      Nurture Track
+                      Never Miss A Lead
                     </span>
                   </div>
                   <p className="text-[11px] leading-relaxed">
-                    Drops automated ringless audio voicemail from agency owner + fires Day 1 high-value email. Enqueues in 5-day automated follow-up sequence.
+                    Sends friendly reminders over the next few days. No lead slips through the cracks, and you don't have to remember to follow up manually.
                   </p>
                 </div>
               </div>
@@ -396,20 +396,20 @@ export const GHLShowcase: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-white">Outcome: Pipeline Updated & Ad Attribution Logged</span>
+                    <span className="text-xs font-bold text-white">Step 4: Booked Call Added & Pipeline Updated</span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
-                      Opportunity Created / Advanced
+                      Ready For You
                     </span>
                   </div>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    Deal value allocated, ad spend UTM campaign tracked, and real-time dashboard updated for agency client reporting.
+                  <p className="text-xs text-slate-300 mt-0.5">
+                    A confirmed appointment is on your calendar, your sales board is updated, and both you and your client receive reminder notifications.
                   </p>
                 </div>
               </div>
 
               <div className="shrink-0 text-right">
-                <span className="text-[11px] font-mono text-cyan-300 bg-cyan-950/60 border border-cyan-800/80 px-2.5 py-1 rounded-md">
-                  100% Automated | 0 Rep Hours
+                <span className="text-[11px] font-mono text-emerald-300 bg-emerald-950/60 border border-emerald-800/80 px-2.5 py-1 rounded-md">
+                  100% Automated | 0 Time Wasted
                 </span>
               </div>
             </div>

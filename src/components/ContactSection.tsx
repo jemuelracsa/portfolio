@@ -75,10 +75,10 @@ export const ContactSection: React.FC = () => {
             <span>Let's Connect</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Get in Touch
+            Let's Talk About Your Project
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base mt-2">
-            Interested in discussing an engineering role, distributed systems architecture, or collaborating on high-impact projects? Let's talk.
+          <p className="text-slate-300 text-sm sm:text-base mt-2">
+            Have a project or need help setting up GoHighLevel? Send me a quick message and I'll get back to you within 24 hours.
           </p>
         </div>
 
@@ -106,17 +106,17 @@ export const ContactSection: React.FC = () => {
                   <p className="text-xs text-cyan-400 font-mono">
                     {PERSONAL_INFO.title}
                   </p>
-                  <span className="text-[11px] text-slate-400">
-                    Independent Specialist • Available
+                  <span className="text-[11px] text-emerald-400 font-medium">
+                    Available for new projects & clients
                   </span>
                 </div>
               </div>
 
               <h3 className="text-sm font-bold text-white mb-2">
-                Direct Communication
+                Message Me Directly
               </h3>
-              <p className="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
-                Feel free to email me directly or submit the contact form. I typically respond to all GoHighLevel agency inquiries, technical roles, and client reach-outs within 24 hours.
+              <p className="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+                Email me anytime or use the simple form here. I read every message and usually reply within a few hours.
               </p>
 
               {/* Email Copy Card */}
@@ -126,7 +126,7 @@ export const ContactSection: React.FC = () => {
                     <Mail className="w-4 h-4" />
                   </div>
                   <div className="flex flex-col overflow-hidden">
-                    <span className="text-[11px] font-mono text-slate-400">Primary Email</span>
+                    <span className="text-[11px] font-mono text-slate-400">Direct Email</span>
                     <span className="text-xs sm:text-sm font-mono font-medium text-slate-200 truncate">
                       {PERSONAL_INFO.email}
                     </span>
@@ -157,8 +157,8 @@ export const ContactSection: React.FC = () => {
               {/* Quick Info Grid */}
               <div className="space-y-3 pt-2">
                 <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-300">
-                  <Clock className="w-4 h-4 text-cyan-400 shrink-0" />
-                  <span>Response Time: Typically under 24 hours</span>
+                  <Clock className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Response Time: Usually within a few hours</span>
                 </div>
                 <div className="flex items-center gap-3 text-xs sm:text-sm text-slate-300">
                   <MapPin className="w-4 h-4 text-cyan-400 shrink-0" />
@@ -178,14 +178,14 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Hiring Manager Notice */}
+            {/* Client Notice */}
             <div className="p-5 bg-gradient-to-br from-slate-900 to-slate-950 border border-cyan-500/20 rounded-2xl">
               <div className="flex items-center gap-2 text-cyan-400 text-xs font-mono font-semibold mb-1">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                EMPLOYER & CLIENT NOTE
+                READY TO START
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Available for full-time GoHighLevel Specialist roles, Agency CRM Architecture, custom API v2 integrations, and turnkey snapshot developments. Rapid onboarding and reliable delivery guaranteed.
+                Whether you need a full GoHighLevel setup from scratch, faster lead follow-up, or ongoing tech support, I'm ready to help you get it running smoothly.
               </p>
             </div>
           </div>
@@ -278,7 +278,7 @@ export const ContactSection: React.FC = () => {
                         htmlFor="contact-inquiry-type"
                         className="block text-xs font-medium text-slate-300 mb-1.5"
                       >
-                        Inquiry Type
+                        How Can I Help You?
                       </label>
                       <select
                         id="contact-inquiry-type"
@@ -291,12 +291,12 @@ export const ContactSection: React.FC = () => {
                         }
                         className="w-full px-3.5 py-2.5 bg-slate-950/70 border border-slate-800 rounded-lg text-xs sm:text-sm text-slate-200 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition-colors"
                       >
-                        <option value="Full-Time Employment">Full-Time Role (GHL / Full-Stack)</option>
-                        <option value="GoHighLevel Workflows & Setup">GoHighLevel Workflows & Setup</option>
-                        <option value="Custom Snapshot / SaaS Mode">Custom Snapshot / SaaS Mode</option>
-                        <option value="GHL API v2 & Custom Integrations">GHL API v2 & Custom Integrations</option>
-                        <option value="Contract / Project">Contract / Consulting</option>
-                        <option value="General Question">General Inquiry</option>
+                        <option value="GoHighLevel Setup & Workflows">GoHighLevel Setup & Workflows</option>
+                        <option value="GHL Snapshot & SaaS Mode">Turnkey Snapshot & SaaS Setup</option>
+                        <option value="API & Custom Webhook Integration">API & Custom Integrations</option>
+                        <option value="Full-Time Employment">Full-Time / Dedicated Hire</option>
+                        <option value="Contract / Consulting">Project Contract / Consulting</option>
+                        <option value="General Question">General Question</option>
                       </select>
                     </div>
 
@@ -312,7 +312,7 @@ export const ContactSection: React.FC = () => {
                         id="contact-subject"
                         value={formData.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        placeholder="Engineering Role / Project Discussion"
+                        placeholder="Need help automating lead follow-up"
                         className="w-full px-3.5 py-2.5 bg-slate-950/70 border border-slate-800 rounded-lg text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition-colors"
                       />
                     </div>
@@ -332,7 +332,7 @@ export const ContactSection: React.FC = () => {
                       required
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Share details about the role, team, or project requirements..."
+                      placeholder="Tell me a bit about your business and what you'd like to achieve..."
                       className="w-full px-3.5 py-2.5 bg-slate-950/70 border border-slate-800 rounded-lg text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition-colors resize-y"
                     />
                   </div>

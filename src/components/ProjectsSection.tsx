@@ -46,13 +46,13 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
           <div>
             <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-widest mb-2 font-semibold">
               <Layers className="w-4 h-4" />
-              <span>Engineering Portfolio</span>
+              <span>Recent Work</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Featured Systems & Projects
+              Featured Projects & Results
             </h2>
-            <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-xl">
-              Production frameworks, high-throughput microservices, and real-time client applications architected with robust engineering standards.
+            <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-xl">
+              Explore live GoHighLevel systems, web applications, and automations built for speed, simplicity, and measurable results.
             </p>
           </div>
 

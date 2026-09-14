@@ -1,6 +1,8 @@
 {
-  "name": "Jemuel Racsa — Software Engineer Portfolio",
-  "description": "Modern, responsive portfolio for Jemuel Racsa showcasing GoHighLevel CRM architecture, automation workflows, full-stack engineering projects, and contact inquiry.",
+  "name": "Jemuel Racsa — GoHighLevel Specialist & Full-Stack Engineer",
+  "description": "Modern, high-converting portfolio for Jemuel Racsa showcasing GoHighLevel CRM automations, lead-nurturing workflows, full-stack systems, and client results.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

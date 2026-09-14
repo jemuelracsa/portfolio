@@ -77,11 +77,11 @@ export const Footer: React.FC = () => {
         {/* Bottom Credits & Status */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-center sm:text-left">
           <div>
-            &copy; {new Date().getFullYear()} {PERSONAL_INFO.name}. Open for software engineering opportunities.
+            &copy; {new Date().getFullYear()} {PERSONAL_INFO.name}. Available for GoHighLevel setups, automations & client projects.
           </div>
           <div className="flex items-center gap-2 font-mono text-[11px]">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-            <span>https://jemuelracsa.github.io</span>
+            <span>https://jemuelracsa.github.io/portfolio/</span>
           </div>
         </div>
       </div>

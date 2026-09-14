@@ -11,19 +11,19 @@ export const ExperienceSection: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-widest mb-2 font-semibold">
               <Briefcase className="w-4 h-4" />
-              <span>Career History</span>
+              <span>Track Record</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Work Experience & Impact
+              Proven Experience & Results
             </h2>
-            <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-xl">
-              Track record of building resilient software, collaborating with cross-functional teams, and delivering production systems at scale.
+            <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-xl">
+              Over 5 years of experience building reliable automations, web applications, and business systems that help companies grow with confidence.
             </p>
           </div>
 
           <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
             <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span>Continuously Shipping Since 2018</span>
+            <span>Building for Clients Since 2018</span>
           </div>
         </div>
 

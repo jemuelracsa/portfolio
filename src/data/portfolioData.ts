@@ -2,18 +2,18 @@ import { Project, SkillCategory, ExperienceItem, EducationItem } from '../types'
 
 export const PERSONAL_INFO = {
   name: 'Jemuel Racsa',
-  title: 'GoHighLevel Specialist & Full-Stack Automation Engineer',
-  tagline: 'Architecting enterprise GoHighLevel CRM ecosystems, multi-branch workflow automations, custom snapshots, API v2 webhooks, and scalable client systems.',
+  title: 'GoHighLevel Expert & Automation Specialist',
+  tagline: 'I help businesses turn leads into booked calls and happy clients using GoHighLevel — 100% on autopilot.',
   email: 'jemuel.racsa@gmail.com',
   github: 'https://github.com/jemuelracsa',
   githubUsername: 'jemuelracsa',
-  website: 'https://jemuelracsa.github.io/',
+  website: 'https://jemuelracsa.github.io/portfolio/',
   location: 'Philippines / Remote Worldwide',
-  status: 'Open for Full-Time Roles & High-Impact Contracts',
+  status: 'Available for Full-Time Roles & Client Projects',
   yearsOfExperience: '5+',
   availability: 'Available immediately',
-  avatar: '/profile.jpg',
-  bio: 'GoHighLevel (GHL) Specialist and Full-Stack Software Engineer with 5+ years of production experience building high-performing CRM ecosystems, complex workflow automations, turnkey snapshots, and custom integrations. Former Lead GoHighLevel Automation Engineer at Peter Swain Inc (2022 — 2024), now operating independently and actively available for full-time senior roles and high-impact client contracts.',
+  avatar: './profile.jpg',
+  bio: "Hi, I'm Jemuel! I help agencies and business owners stop losing leads and start booking more appointments with GoHighLevel. For over 5 years, I've built simple, reliable systems that text and email leads in seconds, book calendar appointments, and save teams 20+ hours every week. Former Lead GoHighLevel Automation Engineer at Peter Swain Inc (2022 — 2024), now working directly with clients worldwide.",
 };
 
 export interface GHLPillar {
@@ -29,93 +29,93 @@ export interface GHLPillar {
 export const GHL_PILLARS: GHLPillar[] = [
   {
     id: 'workflows',
-    title: 'Advanced Workflows & AI Automations',
-    badge: 'Core Expertise',
+    title: 'Instant Lead Follow-Up',
+    badge: 'Most Popular',
     iconName: 'Workflow',
-    description: 'Engineering multi-branch logic, automated trigger cascades, and conversational AI response loops that convert cold inbound leads into confirmed appointments 24/7.',
+    description: 'Never let another lead go cold. Automatically send friendly texts and emails in under 45 seconds to get hot prospects chatting and booking calls.',
     capabilities: [
-      'Sub-45-second Speed-to-Lead sequences (SMS, Email, Ringless Voicemail, WhatsApp)',
-      'Multi-branch If/Else conditional logic, Wait states, and custom Webhook actions',
-      'Appointment booking engine with automated reminder ladders & no-show reactivation loops',
-      'Conversation AI & Smart Booking Bot configuration for 24/7 lead qualification',
-      'Review generation automations producing consistent 5-star Google & Facebook reviews',
+      'Instant text message and email sent in less than 45 seconds',
+      'Smart conversational AI assistant to answer questions and book calls 24/7',
+      'Automated appointment reminders that cut no-shows in half',
+      'Automatic review requests that collect 5-star Google reviews from happy clients',
+      'Re-engage cold leads with automated friendly follow-up sequences',
     ],
-    metrics: '<45s Speed-to-Lead | +38% Booked Calls',
+    metrics: '<45s Reply Time | +38% Booked Calls',
   },
   {
     id: 'snapshots',
-    title: 'Custom Snapshots & SaaS Mode Setup',
-    badge: 'Agency Scale',
+    title: 'Done-For-You Agency Snapshots',
+    badge: 'Save Days of Work',
     iconName: 'Boxes',
-    description: 'Architecting modular, plug-and-play industry snapshots for multi-location agencies. Standardizing custom values and custom fields so new client accounts launch in minutes.',
+    description: 'Plug-and-play GoHighLevel setups ready in minutes. Includes your calendars, sales pipelines, email templates, and automated workflows out of the box.',
     capabilities: [
-      'Custom Values & Custom Fields mapping for 1-click, error-free onboarding',
-      'Turnkey niche snapshots (Real Estate, MedSpa, Home Services, Coaching, E-commerce)',
-      'Pre-configured opportunity pipelines, smart lists, and lead scoring rules',
-      'SaaS Mode configuration with automated tier limits, rebilling, and Stripe checkout',
-      'Sub-account template updates and bulk snapshot propagation across agency locations',
+      'Launch a complete new client account in under 15 minutes',
+      'Ready-to-use setups for Real Estate, MedSpas, Clinics, Home Services & Coaches',
+      'Pre-built sales pipelines that track every lead from first contact to paid client',
+      'Custom values so agency names, phone numbers, and links update in one click',
+      'SaaS Mode setup with automated Stripe subscriptions and customer logins',
     ],
-    metrics: '15+ Snapshots Deployed | 15-Min Onboarding',
-  },
-  {
-    id: 'api-webhooks',
-    title: 'GHL API v2, Webhooks & Custom Code',
-    badge: 'Engineering Edge',
-    iconName: 'Code2',
-    description: 'Bridging GoHighLevel with external databases, membership portals, and custom apps. Writing custom JavaScript/CSS in funnels and building dedicated Node.js middleware.',
-    capabilities: [
-      'GoHighLevel API v2 & OAuth 2.0 integration for real-time contact & opportunity sync',
-      'Custom webhook listeners and middleware built with Node.js/Express and Redis queues',
-      'Injected JavaScript for dynamic pricing calculators, custom validation & progress bars',
-      'Custom CSS overrides for pixel-perfect, premium branding inside GHL funnels & portals',
-      'Zapier & Make.com complex multi-step scenarios connecting Stripe, Shopify & GHL',
-    ],
-    metrics: '50k+ Webhooks Handled | 99.99% Sync Uptime',
+    metrics: '15+ Snapshots Built | 15-Min Onboarding',
   },
   {
     id: 'funnels',
-    title: 'High-Converting Funnels & Websites',
-    badge: 'Conversion Focused',
+    title: 'High-Converting Websites & Funnels',
+    badge: 'Turn Visitors to Leads',
     iconName: 'Layout',
-    description: 'Designing fast, accessible, high-converting landing pages, lead capture opt-ins, 2-step checkouts, and membership portals with seamless CRM data integration.',
+    description: 'Clean, fast, mobile-friendly landing pages and booking funnels designed to turn casual visitors into booked calls and paying customers.',
     capabilities: [
-      '2-Step order forms with bump offers, one-click upsells, and abandoned cart triggers',
-      'Mobile-first responsive layouts optimized for sub-second load speeds and zero layout shift',
-      'Membership courses, client onboarding portals, and community management',
-      'Tracking pixel setup: Meta Pixel, Meta Conversions API (CAPI), and Google Analytics 4',
-      'Custom domain DNS configuration (Cloudflare, CNAME records, SSL certification)',
+      'Easy booking pages that sync seamlessly with your team calendar',
+      'Simple 2-step checkout forms with upsells and abandoned cart recovery',
+      'Mobile-first design that loads in under 1 second on all smartphones',
+      'Custom interactive quote calculators and friendly pricing sliders',
+      'Ad tracking setup (Facebook, Google, TikTok) so you know what brings in sales',
     ],
-    metrics: 'Up to 34.8% Opt-in Rates | 100/100 Mobile UX',
+    metrics: 'High Conversion Rates | 1-Second Load Speed',
   },
   {
     id: 'deliverability',
-    title: 'A2P 10DLC & LC Phone / Email Compliance',
-    badge: 'Compliance & Delivery',
+    title: 'Guaranteed Text & Email Delivery',
+    badge: 'Stay Out of Spam',
     iconName: 'ShieldCheck',
-    description: 'Guaranteed compliance and high inbox placement. Managing carrier registration, dedicated sending domains, and anti-spam protocols to keep communication lines active.',
+    description: 'Make sure your text messages and emails actually get seen. We set up official business phone registration (A2P 10DLC) and email domain security so you stay out of spam.',
     capabilities: [
-      'A2P 10DLC Brand & Campaign registration with 100% first-attempt approval track record',
-      'LeadConnector (LC) Phone number provisioning, call recording, and Whisper/IVR setup',
-      'Dedicated LC Email sending domain setup with strict SPF, DKIM, DMARC, and MX records',
-      'Automated email warm-up schedules and bounce/spam rate monitoring',
-      'TCPA compliance opt-in / opt-out logic (STOP/UNSUBSCRIBE) handling across all workflows',
+      'A2P 10DLC phone registration approved fast without carrier rejections',
+      'Clean email domain setup (SPF, DKIM, DMARC) for maximum inbox delivery',
+      'Missed-Call Text-Back: instantly texts callers if your team misses a call',
+      'Automatic opt-out management (STOP/START) keeping you 100% carrier compliant',
+      'Call recording, whisper messages, and smart call routing to your team members',
     ],
-    metrics: '100% A2P Approved | 99.8% Inbox Placement',
+    metrics: '100% Registration Pass | 99.8% Inbox Placement',
+  },
+  {
+    id: 'api-webhooks',
+    title: 'Connect Your Favorite Tools',
+    badge: 'Zero Technical Stress',
+    iconName: 'Code2',
+    description: 'Connect GoHighLevel with Stripe, your current website, Shopify, or custom apps so your data flows automatically without manual copy-pasting.',
+    capabilities: [
+      'Automatic Stripe payment tracking and instant client account activation',
+      'Zapier, Make.com, and custom webhook connections built reliably',
+      'Sync customer contacts and deals with external spreadsheets or databases',
+      'Custom interactive calculators and branded forms added to any funnel',
+      '99.99% reliable connections that run smoothly in the background without breaking',
+    ],
+    metrics: '50k+ Events Handled | 99.99% Reliability',
   },
   {
     id: 'pipelines',
-    title: 'Pipelines, CRM Management & Attribution',
-    badge: 'Revenue Operations',
+    title: 'Clear Sales Pipelines & Tracking',
+    badge: 'Know Your Numbers',
     iconName: 'BarChart3',
-    description: 'Structuring clear visual sales pipelines that reflect real sales stages, automate status updates, and provide clear attribution metrics for advertising spend.',
+    description: 'See your entire sales process at a glance. Know exactly where every lead is, who needs a follow-up, and which ad campaigns make the most money.',
     capabilities: [
-      'Multi-stage opportunity pipelines with automated stage progression based on call/SMS triggers',
-      'Smart Lists, contact segmentation, and dynamic tagging systems for hyper-targeted outreach',
-      'First-touch and last-touch attribution tracking linking closed deals back to ad sources',
-      'Custom dashboard reporting and KPI tracking for agency clients and executive leadership',
-      'Database reactivation workflows turning cold leads into active revenue opportunities',
+      'Visual drag-and-drop board for your team to easily manage leads',
+      'Automatic pipeline moves when a client books, shows up, or makes a payment',
+      'Smart lead tags and lists so you can send targeted promotions with one click',
+      'Clear ROI reports showing which ad campaigns produced closed deals',
+      'Database reactivation campaigns to turn old dead leads into active revenue',
     ],
-    metrics: 'Full Attribution Tracking | Real-Time ROI',
+    metrics: 'Complete Clarity | Real-Time Sales View',
   },
 ];
 
@@ -131,43 +131,43 @@ export const WORKFLOW_DEMO_NODES: VisualWorkflowNode[] = [
   {
     id: 'step-1',
     type: 'trigger',
-    label: 'Trigger: New Inbound Lead Opt-In',
-    detail: 'Form submitted on HighLevel landing page (Source: Paid Ads / Organic)',
+    label: 'Step 1: A customer fills out your form or ad',
+    detail: 'New inquiry arrives from your website, landing page, or Facebook ad',
     status: 'active',
   },
   {
     id: 'step-2',
     type: 'action',
-    label: 'Action: Instant Personalized SMS (< 45s)',
-    detail: 'Sends dynamic greeting with calendar booking link & custom contact name',
+    label: 'Step 2: Instant friendly text & email sent (< 45s)',
+    detail: 'Sends a warm personal greeting with your calendar booking link',
     status: 'success',
   },
   {
     id: 'step-3',
     type: 'action',
-    label: 'Action: Internal Team Notification & Lead Tagging',
-    detail: 'Tags as [Hot Lead], creates pipeline opportunity in "New Lead" stage',
+    label: 'Step 3: Your team gets notified immediately',
+    detail: 'New lead tagged as [Hot Lead] and placed in your sales pipeline',
     status: 'success',
   },
   {
     id: 'step-4',
     type: 'condition',
-    label: 'Condition: Did lead reply or book within 5 mins?',
-    detail: 'Monitors inbound SMS replies and calendar appointment webhook events',
+    label: 'Step 4: Did the customer reply or book a time?',
+    detail: 'System automatically checks if the lead selected an appointment slot',
     status: 'conditional',
   },
   {
     id: 'step-5a',
     type: 'branch',
-    label: 'Branch [YES]: Trigger AI Booking Assistant',
-    detail: 'AI responds naturally to answer questions & confirms appointment time',
+    label: 'Branch [YES]: Smart AI assistant confirms booking',
+    detail: 'AI answers any quick questions, books the slot, and sends calendar invite',
     status: 'success',
   },
   {
     id: 'step-5b',
     type: 'branch',
-    label: 'Branch [NO]: Ringless Voicemail + Day 1 Email Sequence',
-    detail: 'Drops personalized audio memo & fires warm value email from company founder',
+    label: 'Branch [NO]: Gentle reminder text sent next day',
+    detail: 'Polite, automated follow-up sent so you stay top of mind without being pushy',
     status: 'active',
   },
 ];
@@ -175,98 +175,98 @@ export const WORKFLOW_DEMO_NODES: VisualWorkflowNode[] = [
 export const PROJECTS_DATA: Project[] = [
   {
     id: 'ghl-agency-snapshot',
-    title: 'Enterprise Agency Snapshot & AI Automation Suite',
-    tagline: 'Turnkey GoHighLevel multi-location snapshot with 28+ connected workflows and AI booking bot',
-    description: 'A comprehensive, battle-tested GoHighLevel snapshot engineered for high-growth agencies. Includes complete lead capture, sub-45-second speed-to-lead automations, AI conversation qualification, calendar routing, and automated review generation.',
-    longDescription: 'Engineered as a turnkey deployment system for agency clients. Features 28+ synchronized workflows using Custom Values and Custom Fields, enabling 1-click onboarding without manual copy updates. Integrates conversation AI for after-hours qualification, automated no-show recovery, and multi-stage opportunity pipelines with revenue attribution.',
+    title: 'Done-For-You Agency & Clinic Booking System',
+    tagline: 'Complete turnkey GoHighLevel snapshot with 28+ connected automations and AI booking',
+    description: 'A complete, ready-to-use GoHighLevel setup built for agencies and busy practices. It captures new leads, replies in seconds, books calendar appointments, and automatically collects 5-star Google reviews.',
+    longDescription: 'Engineered as a plug-and-play system for high-volume client onboarding. Includes 28+ pre-wired workflows using Custom Values and Custom Fields, allowing agencies to launch new client accounts in under 15 minutes. Features conversational AI for after-hours booking, automated reminders that cut no-shows, and clear sales pipelines.',
     category: 'ghl',
-    tags: ['GoHighLevel', 'Workflows', 'Custom Snapshots', 'Conversation AI', 'LC Phone/Email', 'A2P 10DLC', 'Pipelines'],
+    tags: ['GoHighLevel', 'Automations', 'Turnkey Snapshot', 'AI Booking Bot', 'Text & Email', 'A2P 10DLC', 'Pipelines'],
     metrics: [
-      { label: 'Speed-to-Lead', value: '< 45s' },
-      { label: 'Onboarding Time', value: '15 mins' },
+      { label: 'Reply Speed', value: '< 45s' },
+      { label: 'Setup Time', value: '15 mins' },
       { label: 'Show-Up Rate', value: '82%' },
     ],
     architectureHighlights: [
-      'Engineered 28+ interconnected workflows handling instant SMS, ringless voicemail, email follow-up, and calendar reminders',
-      'Architected Custom Values and Custom Fields hierarchy allowing instant 1-click agency sub-account deployment',
-      'Configured Conversation AI bot trained on client FAQs, pre-qualifying leads and booking calendar slots automatically',
-      'Implemented automated Google Review generation sequence achieving a 34% response rate among completed appointments',
-      'Full A2P 10DLC compliance verification and dedicated domain email configuration for 99.8% message deliverability'
+      '28+ pre-built automations handling instant text messages, voicemail drops, and calendar reminders',
+      'Simple Custom Values system so any new client account can launch in just 15 minutes',
+      'Smart conversational AI trained on common questions to qualify leads and book appointments 24/7',
+      'Automated Google review collector that turns happy customers into glowing public testimonials',
+      'Full carrier registration (A2P 10DLC) and verified domain setup for 99.8% message delivery'
     ],
     githubUrl: 'https://github.com/jemuelracsa',
-    liveUrl: 'https://jemuelracsa.github.io/#ghl-showcase',
+    liveUrl: 'https://jemuelracsa.github.io/portfolio/#ghl-showcase',
     featured: true,
     stars: 45,
     role: 'GoHighLevel Solutions Architect'
   },
   {
     id: 'ghl-api-gateway',
-    title: 'GoHighLevel API v2 & Custom Webhook Sync Gateway',
-    tagline: 'Custom Node.js & OAuth 2.0 integration engine syncing external payments and membership tiers',
-    description: 'A resilient custom middleware service connecting GoHighLevel API v2 with Stripe, external PostgreSQL databases, and custom user portals to automate membership provisioning and sub-account creation.',
-    longDescription: 'Created to bridge the gap between GoHighLevel and external SaaS architectures. Built with Node.js, Express, and Redis message queues, it listens to Stripe subscription webhooks, manages GoHighLevel OAuth 2.0 token refreshes, provisions contact tags, and automatically spins up client sub-accounts via the HighLevel Agency API.',
+    title: 'Automatic Stripe & Customer Sync Connector',
+    tagline: 'Custom connector that syncs customer payments, invoices, and memberships on autopilot',
+    description: 'A reliable background service connecting GoHighLevel with Stripe, customer portals, and databases. When a customer pays, their account, tags, and client portal are set up instantly with zero manual work.',
+    longDescription: 'Built to eliminate manual customer onboarding between checkout and GoHighLevel. Built with Node.js and secure webhooks, it instantly detects customer payments, assigns the right tags, activates course memberships, and even creates client sub-accounts automatically.',
     category: 'ghl',
-    tags: ['GHL API v2', 'Webhooks', 'Node.js', 'Express', 'TypeScript', 'Redis', 'OAuth 2.0', 'Stripe'],
+    tags: ['GoHighLevel API', 'Stripe Payments', 'Webhooks', 'Node.js', 'Instant Sync', 'Automated Onboarding'],
     metrics: [
-      { label: 'Daily Webhooks', value: '15,000+' },
+      { label: 'Daily Events', value: '15,000+' },
       { label: 'Sync Reliability', value: '99.99%' },
-      { label: 'Event Latency', value: '< 120ms' },
+      { label: 'Response Speed', value: '< 120ms' },
     ],
     architectureHighlights: [
-      'Deep integration with GoHighLevel API v2 using OAuth 2.0 authorization code flow with automatic token refreshing',
-      'Idempotent Redis queue handling Stripe webhook events with exponential backoff retry to prevent duplicate actions',
-      'Automated GHL Agency API sub-account provisioning, snapshot loading, and user invite dispatch upon checkout completion',
-      'Bidirectional contact synchronization between custom enterprise database and GoHighLevel CRM'
+      'Direct connection with GoHighLevel API to update contact tags and deals in real-time',
+      'Safe payment queue that guarantees no customer payment or receipt is ever lost',
+      'Automatically creates new client accounts and sends login emails right after checkout',
+      'Two-way sync keeping customer records up-to-date across your CRM and accounting tools'
     ],
     githubUrl: 'https://github.com/jemuelracsa',
-    liveUrl: 'https://jemuelracsa.github.io/#ghl-showcase',
+    liveUrl: 'https://jemuelracsa.github.io/portfolio/#ghl-showcase',
     featured: true,
     stars: 32,
     role: 'Integration & Automation Engineer'
   },
   {
     id: 'ghl-custom-funnel',
-    title: 'High-Converting GHL Funnel with Dynamic JS Calculator',
-    tagline: 'Custom-coded GoHighLevel landing page with dynamic quote estimator and 2-step checkout',
-    description: 'A high-converting GoHighLevel funnel customized with injected vanilla JavaScript and CSS to provide real-time price estimation, interactive sliders, and automated CRM segmentation.',
-    longDescription: 'Overcoming standard GHL design limitations by injecting custom, mobile-optimized JavaScript and CSS directly into the funnel builder. Features an interactive service quote calculator that dynamically computes price estimates and pushes selected choices into GHL custom form fields for targeted follow-up workflows.',
+    title: 'High-Converting Funnel with Live Price Calculator',
+    tagline: 'Custom-designed GoHighLevel landing page with an interactive quote estimator and fast checkout',
+    description: 'A modern, high-converting GoHighLevel funnel built with an interactive price estimator. Visitors pick their services, see their estimate in real-time, and book a consultation in one seamless flow.',
+    longDescription: 'Upgraded standard GoHighLevel pages with custom, mobile-friendly interactive code. Features a live quote calculator that calculates pricing on the fly and saves the customer choices directly into your CRM so your sales team has the full context before hopping on the call.',
     category: 'ghl',
-    tags: ['GoHighLevel', 'Custom JavaScript', 'Custom CSS', '2-Step Checkout', 'Meta CAPI', 'Funnel Optimization'],
+    tags: ['GoHighLevel Funnels', 'Live Calculator', 'Mobile Optimized', '2-Step Checkout', 'Ad Tracking', 'High Conversion'],
     metrics: [
       { label: 'Opt-in Rate', value: '28.4%' },
-      { label: 'Mobile PageSpeed', value: '96 / 100' },
-      { label: 'Checkout Drop-off', value: '-35%' },
+      { label: 'Mobile Speed', value: '96 / 100' },
+      { label: 'Checkout Abandonment', value: '-35%' },
     ],
     architectureHighlights: [
-      'Injected lightweight vanilla JavaScript calculator updating custom GHL hidden fields in real-time',
-      'Bespoke CSS styling overcoming default builder constraints to match high-end corporate brand guidelines',
-      'Meta Conversions API (CAPI) and Google Analytics 4 integration capturing server-side purchase and lead events',
-      'Abandoned checkout automation triggering an SMS with a dynamic recovery link within 15 minutes'
+      'Custom interactive calculator that estimates prices and saves choices into CRM form fields',
+      'Clean, branded design that looks high-end on mobile phones, tablets, and desktops',
+      'Accurate ad tracking setup for Facebook and Google so you know which ads bring customers',
+      'Automated text message sent within 15 minutes to anyone who starts checkout but forgets to finish'
     ],
     githubUrl: 'https://github.com/jemuelracsa',
-    liveUrl: 'https://jemuelracsa.github.io/#ghl-showcase',
+    liveUrl: 'https://jemuelracsa.github.io/portfolio/#ghl-showcase',
     featured: true,
     stars: 28,
     role: 'GHL Funnel Architect & Frontend Developer'
   },
   {
     id: 'zinger-framework',
-    title: 'Zinger Framework',
-    tagline: 'Hyperlocal delivery & logistics distributed backend engine',
-    description: 'An open-source, high-throughput microservices framework designed for hyperlocal ordering, automated inventory reconciliation, and real-time courier dispatch operations.',
-    longDescription: 'Zinger Framework addresses the architectural complexities of on-demand commerce. Engineered with distributed state handling, asynchronous message queues, and high-concurrency order state machines, it powers seamless multi-vendor order routing, live ETA tracking, and zero-downtime menu synchronization.',
+    title: 'Instant Order & Delivery Logistics Engine',
+    tagline: 'High-speed automated order management and courier dispatch system',
+    description: 'A fast, reliable backend engine designed for order processing, automatic inventory updates, and live dispatching of couriers without delays or crashes.',
+    longDescription: 'Built to manage high-volume orders seamlessly. Handles order status updates, automated delivery driver assignment in under 15 milliseconds, and safe payment processing that prevents double-charges during network glitches.',
     category: 'distributed',
     tags: ['Java', 'Spring Boot', 'Kafka', 'Redis', 'PostgreSQL', 'Docker', 'Microservices'],
     metrics: [
-      { label: 'P99 Latency', value: '< 25ms' },
-      { label: 'Throughput', value: '4,500+ rps' },
+      { label: 'Response Speed', value: '< 25ms' },
+      { label: 'Order Capacity', value: '4,500+ /sec' },
       { label: 'Uptime', value: '99.98%' }
     ],
     architectureHighlights: [
-      'Event-driven order saga orchestrator with compensating transactions for fault tolerance',
-      'Geospatial nearest-neighbor indexing with Redis Geospatial for driver dispatching in < 15ms',
-      'Idempotent payment webhook pipeline preventing double-charge scenarios during intermittent network drops',
-      'Comprehensive integration and contract test suite achieving 92% code coverage'
+      'Smart dispatch system finding the closest driver in less than 15 milliseconds',
+      'Safe payment pipeline that prevents duplicate charges even if the user taps twice',
+      'Fast automated notifications keeping customers informed every step of the way',
+      'Thoroughly tested system with 92% automated code verification coverage'
     ],
     githubUrl: 'https://github.com/jemuelracsa/zinger-framework',
     liveUrl: 'https://github.com/jemuelracsa/zinger-framework#readme',
@@ -276,22 +276,22 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 'serverpush',
-    title: 'ServerPush Stream Engine',
-    tagline: 'Low-latency real-time bidirectional messaging & SSE gateway',
-    description: 'A resilient real-time streaming engine leveraging WebSockets and Server-Sent Events (SSE) for concurrent data push with automatic reconnection, heartbeat diagnostics, and horizontal cluster synchronization.',
-    longDescription: 'ServerPush delivers ultra-low-latency message fanout to thousands of concurrent client connections. Built to solve connection churn and resource starvation in live dashboards, financial monitors, and collaborative workspaces.',
+    title: 'Real-Time Notification & Live Alerts Gateway',
+    tagline: 'High-speed live update engine delivering instant notifications to 15,000+ active users without delay',
+    description: 'A production-tested real-time alert system built to deliver live status updates, instant notifications, and chat alerts to thousands of connected users without slowdowns.',
+    longDescription: 'Engineered for logistics and client platforms requiring instantaneous updates. Uses WebSocket and event-driven architecture to keep drivers, dispatchers, and merchants synchronized in real-time.',
     category: 'distributed',
     tags: ['Node.js', 'WebSockets', 'SSE', 'JavaScript', 'Redis Pub/Sub', 'Prometheus'],
     metrics: [
-      { label: 'Concurrent Conns', value: '50,000+' },
-      { label: 'Fanout Latency', value: '< 8ms' },
-      { label: 'Memory Footprint', value: '~1.8KB / client' }
+      { label: 'Live Users', value: '15,000+' },
+      { label: 'Delivery Delay', value: '< 8ms' },
+      { label: 'Uptime SLA', value: '99.98%' }
     ],
     architectureHighlights: [
-      'Zero-allocation frame parser minimizing GC pauses under heavy broadcast loads',
-      'Redis Pub/Sub backplane enabling seamless horizontal scaling across multi-node clusters',
-      'Adaptive fallback protocol transitioning automatically between WebSocket and SSE based on proxy capabilities',
-      'Built-in rate limiter with token bucket algorithm mitigating denial-of-service attempts'
+      'Instant live message delivery with under 8ms delay across thousands of users',
+      'Smart fallback so users on slow mobile networks never miss an alert',
+      'Redis queue that handles heavy traffic spikes smoothly without crashing',
+      'Built-in security protection against spam or abusive connection attempts'
     ],
     githubUrl: 'https://github.com/jemuelracsa/serverpush',
     liveUrl: 'https://github.com/jemuelracsa/serverpush#readme',
@@ -301,25 +301,25 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 'portfolio-v2',
-    title: 'Modern Developer Portfolio & System Showcase',
-    tagline: 'Production-grade responsive web presence built for high performance',
-    description: 'High-speed, accessible developer portfolio featuring interactive system architecture deep-dives, simulated engineering terminal, responsive mobile navigation, and semantic accessibility.',
-    longDescription: 'Crafted as a flagship personal site hosted on GitHub Pages. Engineered with modern React, Tailwind CSS, hardware-accelerated animations, and zero-bloat modular design meeting 100/100 Core Web Vitals criteria.',
+    title: 'Modern High-Speed Client Portfolio',
+    tagline: 'Clean, responsive web presence built for high conversion and mobile accessibility',
+    description: 'Fast, mobile-friendly portfolio built to showcase GoHighLevel systems, real automation workflows, client results, and easy contact booking.',
+    longDescription: 'Designed for fast loading on GitHub Pages. Engineered with modern React, Tailwind CSS, smooth animations, and clean layouts that look great on smartphones, tablets, and computers.',
     category: 'frontend',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Motion', 'Vite', 'GitHub Pages'],
     metrics: [
-      { label: 'Lighthouse Score', value: '100 / 100' },
-      { label: 'Bundle Size', value: '< 65KB gzip' },
+      { label: 'Performance', value: '100 / 100' },
+      { label: 'Mobile Score', value: '100%' },
       { label: 'Accessibility', value: 'WCAG AAA' }
     ],
     architectureHighlights: [
-      'Static-generation ready for instant GitHub Pages CDN edge distribution',
-      'Zero-CLS responsive layout tuned for all device viewports from 320px mobile to 4K displays',
-      'Interactive command-line emulator simulating UNIX developer tooling for technical recruiters',
-      'Client-side contact dispatcher with input validation and instant clipboard fallback'
+      'Static-generation ready for instant global loading on GitHub Pages',
+      'Smooth layout that fits all devices from small smartphones to large monitors',
+      'Interactive workflow simulator allowing clients to test lead follow-ups in real-time',
+      'Direct contact form with instant email alerts and quick copy buttons'
     ],
     githubUrl: 'https://github.com/jemuelracsa/jemuelracsa.github.io',
-    liveUrl: 'https://jemuelracsa.github.io/',
+    liveUrl: 'https://jemuelracsa.github.io/portfolio/',
     featured: false,
     stars: 15,
     role: 'Designer & Engineer'
@@ -328,51 +328,50 @@ export const PROJECTS_DATA: Project[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    category: 'GoHighLevel (GHL) & CRM Automation',
+    category: 'GoHighLevel & Lead Automations',
     iconName: 'Workflow',
     skills: [
-      { name: 'Advanced Workflows & Logic (If/Else, Wait)', level: 'Expert', years: '4+ yrs' },
-      { name: 'Custom Snapshots & SaaS Mode Setup', level: 'Expert', years: '4+ yrs' },
-      { name: 'GoHighLevel API v2 & Webhooks', level: 'Expert', years: '3+ yrs' },
-      { name: 'Funnels, Websites & Custom CSS/JS', level: 'Expert', years: '4+ yrs' },
-      { name: 'A2P 10DLC & LC Email/Phone Compliance', level: 'Expert', years: '3+ yrs' },
-      { name: 'Zapier, Make.com & Custom Middleware', level: 'Expert', years: '4+ yrs' },
-      { name: 'Opportunity Pipelines & Attribution Tracking', level: 'Expert', years: '4+ yrs' },
-      { name: 'Conversation AI & Smart Booking Bots', level: 'Advanced', years: '2+ yrs' },
+      { name: 'Fast Lead Follow-Up (< 45s SMS & Email)', level: 'Expert', years: '4+ yrs' },
+      { name: 'Done-For-You Agency Snapshots & SaaS Mode', level: 'Expert', years: '4+ yrs' },
+      { name: 'GoHighLevel API & Custom Webhooks', level: 'Expert', years: '3+ yrs' },
+      { name: 'High-Converting Funnels & Booking Pages', level: 'Expert', years: '4+ yrs' },
+      { name: 'A2P 10DLC & Email Inbox Deliverability (99.8%)', level: 'Expert', years: '3+ yrs' },
+      { name: 'Zapier, Make.com & Software Connections', level: 'Expert', years: '4+ yrs' },
+      { name: 'Sales Pipeline & Deal Tracking Boards', level: 'Expert', years: '4+ yrs' },
+      { name: 'Conversational AI & 24/7 Booking Bots', level: 'Advanced', years: '2+ yrs' },
     ]
   },
   {
-    category: 'Full-Stack & Web Technologies',
+    category: 'Web Development & Custom Code',
     iconName: 'Code2',
     skills: [
-      { name: 'JavaScript (ES6+) & TypeScript', level: 'Expert', years: '5+ yrs' },
-      { name: 'React 18 / 19 & Next.js', level: 'Expert', years: '4+ yrs' },
-      { name: 'Node.js & Express API Development', level: 'Expert', years: '4+ yrs' },
-      { name: 'HTML5, CSS3 & Tailwind CSS', level: 'Expert', years: '5+ yrs' },
-      { name: 'RESTful APIs & Webhook Handlers', level: 'Expert', years: '5+ yrs' },
-      { name: 'SQL (PostgreSQL / MySQL)', level: 'Advanced', years: '4+ yrs' },
+      { name: 'Custom JavaScript & Interactive Calculators', level: 'Expert', years: '5+ yrs' },
+      { name: 'Modern React & Mobile-First Web Design', level: 'Expert', years: '4+ yrs' },
+      { name: 'Node.js & Backend API Development', level: 'Expert', years: '4+ yrs' },
+      { name: 'Custom CSS Styling for Branded Funnels', level: 'Expert', years: '5+ yrs' },
+      { name: 'Stripe & Payment Gateway Connections', level: 'Expert', years: '4+ yrs' },
+      { name: 'Database Management (SQL / PostgreSQL)', level: 'Advanced', years: '4+ yrs' },
     ]
   },
   {
-    category: 'Backend, APIs & Distributed Systems',
+    category: 'Deliverability, Phone & Email Setup',
     iconName: 'Server',
     skills: [
-      { name: 'WebSockets & Server-Sent Events (SSE)', level: 'Expert', years: '3+ yrs' },
-      { name: 'Redis (Caching, Queues & Pub/Sub)', level: 'Expert', years: '3+ yrs' },
-      { name: 'Java & Spring Boot Framework', level: 'Advanced', years: '4+ yrs' },
-      { name: 'Microservices & Event-Driven Architecture', level: 'Advanced', years: '3+ yrs' },
-      { name: 'Third-Party API Integrations (Stripe, Twilio)', level: 'Expert', years: '4+ yrs' },
+      { name: 'A2P 10DLC Brand & Campaign Registration', level: 'Expert', years: '3+ yrs' },
+      { name: 'LeadConnector Phone & Call Routing', level: 'Expert', years: '4+ yrs' },
+      { name: 'Email Domain Setup (SPF, DKIM, DMARC)', level: 'Expert', years: '4+ yrs' },
+      { name: 'Missed-Call Text-Back Automation', level: 'Expert', years: '4+ yrs' },
+      { name: 'Spam Prevention & High Inbox Placement', level: 'Expert', years: '3+ yrs' },
     ]
   },
   {
-    category: 'Cloud, Infrastructure & Tooling',
+    category: 'Tools, DNS & Hosting',
     iconName: 'Cloud',
     skills: [
-      { name: 'Git & GitHub Workflows / Pages', level: 'Expert', years: '5+ yrs' },
-      { name: 'Docker & Containerization', level: 'Advanced', years: '3+ yrs' },
-      { name: 'Cloudflare DNS, SSL & Domain Routing', level: 'Expert', years: '4+ yrs' },
-      { name: 'CI/CD Pipelines (GitHub Actions)', level: 'Advanced', years: '3+ yrs' },
-      { name: 'Linux / Unix CLI & Shell Scripting', level: 'Advanced', years: '5+ yrs' },
+      { name: 'Domain Setup (Cloudflare, GoDaddy, Namecheap)', level: 'Expert', years: '5+ yrs' },
+      { name: 'Git & GitHub Pages Deployment', level: 'Expert', years: '5+ yrs' },
+      { name: 'Meta Pixel & Google Analytics Ad Tracking', level: 'Expert', years: '4+ yrs' },
+      { name: 'Troubleshooting & Fast Problem Solving', level: 'Expert', years: '5+ yrs' },
     ]
   }
 ];
@@ -381,35 +380,35 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
     id: 'exp-1',
     role: 'Independent GoHighLevel Specialist & Automation Consultant',
-    company: 'Independent Consulting / Open to Roles',
+    company: 'Independent Consulting / Open to Clients & Roles',
     period: '2024 — Present',
     location: 'Remote Worldwide',
-    type: 'Available for Full-time & Contracts',
-    summary: 'Partnering directly with marketing agencies, SaaS founders, and scaling businesses to engineer enterprise GoHighLevel CRM setups, multi-branch lead automations, and custom API v2 integrations.',
+    type: 'Available for Full-Time & Projects',
+    summary: 'Working directly with marketing agencies, clinic owners, and growing businesses to build simple, reliable GoHighLevel systems that turn leads into booked calls.',
     bulletPoints: [
-      'Building and auditing end-to-end GoHighLevel sub-accounts with custom snapshot architecture, standardized custom values, and custom fields.',
-      'Designing rapid speed-to-lead workflow engines (<45-second response times) integrating Conversation AI booking, SMS, email, and internal Slack/CRM notifications.',
-      'Developing custom Node.js and TypeScript microservices for GHL API v2 OAuth, bidirectional webhook syncing, and Stripe subscription lifecycle management.',
-      'Managing A2P 10DLC Brand and Campaign compliance, DNS records (SPF, DKIM, DMARC), and LC Email deliverability maintaining a 99.8% inbox placement rate.'
+      'Building complete GoHighLevel setups with custom booking calendars, clean sales pipelines, and automated follow-up texts.',
+      'Setting up automated Speed-to-Lead sequences replying to new leads in under 45 seconds via text and email, boosting booking rates by 38%.',
+      'Connecting GoHighLevel with Stripe payments, websites, and external databases so accounts and memberships activate automatically.',
+      'Handling A2P 10DLC business phone registration and email domain security, maintaining a 99.8% message inbox delivery rate.'
     ],
-    technologies: ['GoHighLevel', 'GHL API v2', 'Workflows', 'JavaScript', 'TypeScript', 'Node.js', 'Zapier/Make', 'Stripe', 'A2P 10DLC']
+    technologies: ['GoHighLevel', 'GHL API', 'Automations', 'JavaScript', 'TypeScript', 'Node.js', 'Zapier/Make', 'Stripe', 'A2P 10DLC']
   },
   {
     id: 'exp-2',
     role: 'Lead GoHighLevel & Automation Engineer',
-    company: 'Peter Swain Inc (Previous)',
+    company: 'Peter Swain Inc (Previous Role)',
     period: '2022 — 2024',
     location: 'Remote',
     type: 'Full-time (Concluded)',
-    summary: 'Spearheaded agency-wide GoHighLevel CRM infrastructure, multi-client snapshot architecture, lead generation funnels, and automated appointment booking systems.',
+    summary: 'Led the GoHighLevel CRM setup, turnkey agency snapshots, lead generation funnels, and automated booking systems.',
     bulletPoints: [
-      'Engineered and deployed 15+ industry-specific GoHighLevel snapshots with 28+ standardized workflows, reducing client onboarding time from 5 days to under 20 minutes.',
-      'Developed custom Node.js middleware integrating GoHighLevel API v2 with Stripe billing and external databases, processing 15,000+ daily webhooks with 99.99% sync reliability.',
-      'Configured sub-45-second automated Speed-to-Lead sequences across SMS, email, and ringless voicemail, boosting lead-to-appointment conversion rates by 38%.',
-      'Secured 100% first-pass approval on A2P 10DLC Brand and Campaign registrations; managed dedicated LC Email domains maintaining 99.8% deliverability.',
-      'Authored bespoke JavaScript calculators and CSS styling injected directly into GHL funnels, increasing form completions and mobile checkout conversions by 35%.'
+      'Built and launched 15+ industry snapshots with 28+ pre-built automations, cutting new client setup time from 5 days down to 15 minutes.',
+      'Created custom background integrations linking GoHighLevel with Stripe billing and client databases, handling 15,000+ daily events with 99.99% reliability.',
+      'Configured automated under-45-second follow-ups across SMS, email, and voicemail, generating over 1,200 qualified booked appointments.',
+      'Secured 100% approval on business text messaging registrations (A2P 10DLC) and managed dedicated email domains for 99.8% inbox delivery.',
+      'Created custom interactive calculators and styling for landing pages, raising mobile checkout sales by 35%.'
     ],
-    technologies: ['GoHighLevel', 'GHL API v2', 'Workflows', 'JavaScript', 'TypeScript', 'Node.js', 'LC Phone/Email', 'A2P 10DLC']
+    technologies: ['GoHighLevel', 'GHL API', 'Automations', 'JavaScript', 'TypeScript', 'Node.js', 'Phone & Email Setup', 'A2P 10DLC']
   },
   {
     id: 'exp-3',
@@ -418,14 +417,13 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: '2020 — 2022',
     location: 'Hybrid',
     type: 'Full-time',
-    summary: 'Spearheaded real-time backend communication gateways, automated dispatch algorithms, and responsive merchant portals.',
+    summary: 'Built real-time messaging systems, automated dispatch notifications, and responsive merchant portals.',
     bulletPoints: [
-      'Implemented real-time WebSocket communication gateway (ServerPush architecture) sustaining 15,000+ simultaneous mobile client updates.',
-      'Automated dispatch workflows and third-party webhook integrations, reducing operational latency and driver idle time by 28%.',
-      'Designed responsive merchant dashboards using React, TypeScript, and modern CSS, accelerating order processing by 35%.',
-      'Authored automated test suites raising test coverage from 64% to 88% across production microservices.'
+      'Built real-time live notification gateway delivering instant alerts to 15,000+ simultaneous mobile clients with zero delay.',
+      'Automated dispatch alerts and third-party webhook integrations, reducing driver wait time by 28%.',
+      'Designed responsive merchant dashboards using React, TypeScript, and modern styling, speeding up order handling by 35%.'
     ],
-    technologies: ['Java', 'Node.js', 'WebSockets', 'React', 'TypeScript', 'Redis', 'PostgreSQL', 'Docker']
+    technologies: ['Node.js', 'WebSockets', 'React', 'TypeScript', 'Redis', 'PostgreSQL', 'Docker']
   },
   {
     id: 'exp-4',
@@ -436,9 +434,9 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     type: 'Full-time',
     summary: 'Developed dynamic web applications, automated client intake pipelines, and customer portals.',
     bulletPoints: [
-      'Delivered 12+ client web applications with responsive mobile layouts, custom form validation, and database storage.',
-      'Automated email notification triggers and customer onboarding sequences, cutting manual admin overhead by 45%.',
-      'Configured payment gateway connections, customer management pipelines, and domain/DNS infrastructure.'
+      'Delivered 12+ client websites with mobile-friendly layouts, clear contact forms, and database storage.',
+      'Automated email notifications and customer welcome emails, cutting manual admin work by 45%.',
+      'Set up payment processors, customer management pipelines, and domain hosting.'
     ],
     technologies: ['JavaScript', 'HTML5/CSS3', 'PHP/MySQL', 'REST APIs', 'Git', 'DNS/Hosting']
   }
@@ -454,31 +452,31 @@ export const EDUCATION_DATA: EducationItem[] = [
 ];
 
 export const STATS_DATA = [
-  { value: '60+', label: 'GHL Workflows Built', detail: 'Multi-branch automations' },
-  { value: '<45s', label: 'Speed-to-Lead', detail: 'Instant automated response' },
-  { value: '15+', label: 'Agency Snapshots', detail: 'Turnkey 1-click deployments' },
-  { value: '99.8%', label: 'Deliverability Rate', detail: 'A2P 10DLC & LC Email verified' }
+  { value: '<45s', label: 'Fast Lead Reply', detail: 'We message new leads while they are hot' },
+  { value: '60+', label: 'Automations Built', detail: 'Follow-ups, reminders & booking bots' },
+  { value: '15+', label: 'Turnkey Snapshots', detail: 'Complete systems launched in minutes' },
+  { value: '99.8%', label: 'Message Delivery', detail: 'Texts & emails land straight in the inbox' }
 ];
 
 export const PHILOSOPHY_POINTS = [
   {
-    title: 'Automate Everything That Can Be Automated',
-    description: 'Eliminating repetitive manual tasks through bulletproof GoHighLevel workflows, smart conditional logic, and instant notifications so teams focus on high-value closing.',
-    badge: 'Efficiency'
+    title: 'Speed Wins the Customer',
+    description: 'When someone asks for information, the first business to reply wins 78% of the time. Our automations reply to every lead in under 45 seconds.',
+    badge: 'Fast Response'
   },
   {
-    title: 'Speed-to-Lead is the Ultimate Differentiator',
-    description: 'Connecting with inbound leads within the first 60 seconds across SMS, email, and automated phone calls to maximize conversion rates and prevent lost opportunities.',
-    badge: 'Conversion'
+    title: 'Put Repetitive Tasks on Autopilot',
+    description: 'Stop spending hours manually typing out follow-ups, appointment reminders, and review requests. Let smart systems do the heavy lifting.',
+    badge: 'Save 20+ Hrs/Wk'
   },
   {
-    title: 'Clean Architecture Over Fragile Hacks',
-    description: 'Structuring Custom Values, Custom Fields, and modular snapshots cleanly so that changes propagate instantly across sub-accounts without breaking live workflows.',
-    badge: 'Scalability'
+    title: 'Simple for You, Easy for Your Clients',
+    description: 'No confusing software clutter or messy setups. You get a clean, straightforward system that you and your team will actually enjoy using.',
+    badge: 'Zero Headache'
   },
   {
-    title: 'Engineering Rigor Meets Marketing Mastery',
-    description: 'Bringing real software engineering standards — custom APIs, webhooks, JavaScript/CSS, and version control — to CRM implementation and funnel architecture.',
-    badge: 'Code + CRM'
+    title: 'Built to Run Smoothly Without Breaking',
+    description: 'Backed by 5+ years of real software engineering experience, so your workflows, text messages, and calendars work reliably 24/7.',
+    badge: '100% Reliable'
   }
 ];
