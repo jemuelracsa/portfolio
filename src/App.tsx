@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { StatsBar } from './components/StatsBar';
+import { WhatIBuildSection } from './components/WhatIBuildSection';
 import { GHLShowcase } from './components/GHLShowcase';
+import { SignatureProcess } from './components/SignatureProcess';
 import { ProjectsSection } from './components/ProjectsSection';
+import { TestimonialsSection } from './components/TestimonialsSection';
 import { ProjectModal } from './components/ProjectModal';
 import { SkillsSection } from './components/SkillsSection';
 import { ExperienceSection } from './components/ExperienceSection';
@@ -33,8 +36,11 @@ export default function App() {
           onOpenTerminal={() => setIsTerminalOpen(true)}
         />
         <StatsBar />
+        <WhatIBuildSection />
         <GHLShowcase />
+        <SignatureProcess />
         <ProjectsSection onSelectProject={(p) => setSelectedProject(p)} />
+        <TestimonialsSection />
         <SkillsSection />
         <ExperienceSection />
         <ContactSection />

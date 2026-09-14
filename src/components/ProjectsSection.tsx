@@ -128,14 +128,21 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                           : 'bg-slate-800 text-slate-300 border-slate-700/60'
                       }`}
                     >
-                      {project.category === 'ghl' ? 'GOHIGHLEVEL & AUTOMATION' : project.category.toUpperCase()}
+                      {project.category === 'ghl' ? 'SYSTEMS & GOHIGHLEVEL' : project.category.toUpperCase()}
                     </span>
 
-                    {project.stars && (
-                      <span className="flex items-center gap-1 text-xs font-mono text-amber-400/90 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20">
-                        <Star className="w-3 h-3 fill-amber-400" />
-                        {project.stars}
+                    {project.category === 'ghl' ? (
+                      <span className="flex items-center gap-1 text-[10px] font-mono text-emerald-300 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                        SOP & Loom Included
                       </span>
+                    ) : (
+                      project.stars && (
+                        <span className="flex items-center gap-1 text-xs font-mono text-amber-400/90 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/20">
+                          <Star className="w-3 h-3 fill-amber-400" />
+                          {project.stars}
+                        </span>
+                      )
                     )}
                   </div>
 

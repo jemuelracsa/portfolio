@@ -1,4 +1,4 @@
-import { Project, SkillCategory, ExperienceItem, EducationItem } from '../types';
+import { Project, SkillCategory, ExperienceItem, EducationItem, Testimonial, ProcessStep, BuildDeliverable, ServiceCategoryItem } from '../types';
 
 export const PERSONAL_INFO = {
   name: 'Jemuel Racsa',
@@ -452,10 +452,10 @@ export const EDUCATION_DATA: EducationItem[] = [
 ];
 
 export const STATS_DATA = [
-  { value: '<45s', label: 'Fast Lead Reply', detail: 'We message new leads while they are hot' },
-  { value: '60+', label: 'Automations Built', detail: 'Follow-ups, reminders & booking bots' },
-  { value: '15+', label: 'Turnkey Snapshots', detail: 'Complete systems launched in minutes' },
-  { value: '99.8%', label: 'Message Delivery', detail: 'Texts & emails land straight in the inbox' }
+  { value: '<45s', label: 'Speed-to-Lead Response', detail: 'Automated SMS/Email replies while lead is hot' },
+  { value: '60+', label: 'Engineered Automations', detail: 'Zero-touch workflows, bots & calendar routers' },
+  { value: '15+', label: 'Turnkey Snapshots Built', detail: 'Standardized systems launched in 15 mins' },
+  { value: '99.8%', label: 'Deliverability & Placement', detail: 'A2P 10DLC registered & inbox hardened' }
 ];
 
 export const PHILOSOPHY_POINTS = [
@@ -478,5 +478,202 @@ export const PHILOSOPHY_POINTS = [
     title: 'Built to Run Smoothly Without Breaking',
     description: 'Backed by 5+ years of real software engineering experience, so your workflows, text messages, and calendars work reliably 24/7.',
     badge: '100% Reliable'
+  }
+];
+
+export const SIGNATURE_PROCESS: ProcessStep[] = [
+  {
+    step: '01',
+    title: 'Discovery & Workflow Audit',
+    subtitle: 'Identify bottlenecks & lost revenue',
+    description: 'We audit your current tech stack, lead sources, and manual steps. We uncover where prospects slip through the cracks and map the ideal client journey before touching any software.',
+    deliverables: [
+      'Full audit of current CRM, forms, and ad channels',
+      'Identification of manual bottlenecks and friction points',
+      'Target metrics: reply times, booking rates & show-up goals'
+    ],
+    iconName: 'Search'
+  },
+  {
+    step: '02',
+    title: 'Architecture & System Blueprint',
+    subtitle: 'Engineered for scalability & zero errors',
+    description: 'Before writing a line of code or building a workflow, we architect the full system blueprint: pipeline stages, custom fields, webhook data flows, and condition branches.',
+    deliverables: [
+      'Visual flowchart of all triggers, branches, and AI logic',
+      'Database schema: custom values, tags, and custom fields',
+      'A2P 10DLC compliance and email authentication roadmap'
+    ],
+    iconName: 'FileCode2'
+  },
+  {
+    step: '03',
+    title: 'Build, Deploy & Full Deliverables',
+    subtitle: 'Turnkey launch + video walkthroughs & SOPs',
+    description: 'We build the complete GoHighLevel ecosystem, conduct live-fire end-to-end testing, and hand over a fully documented system with step-by-step video walkthroughs and written SOPs.',
+    deliverables: [
+      'Turnkey GoHighLevel build with active workflows and calendar booking',
+      'Custom Loom video walkthroughs explaining every piece',
+      'Notion / Doc Standard Operating Procedures (SOPs) for your team',
+      '30 days of post-launch warranty, optimization & support'
+    ],
+    iconName: 'Rocket'
+  }
+];
+
+export const BUILD_DELIVERABLES: BuildDeliverable[] = [
+  {
+    title: 'Video Walkthroughs',
+    tagline: 'Never feel lost or confused',
+    description: 'Crisp, screen-by-screen Loom walkthroughs walking through every workflow, setting, and custom value so you and your team understand the system inside out.',
+    iconName: 'Video',
+    badge: 'Loom Included'
+  },
+  {
+    title: 'Standard Operating Procedures',
+    tagline: 'Step-by-step team SOPs',
+    description: 'Clean, formatted documentation with screenshots showing your staff exactly how to handle leads, manage the pipeline, and run daily operations.',
+    iconName: 'BookOpen',
+    badge: 'Notion / Doc SOPs'
+  },
+  {
+    title: 'Architecture Blueprint',
+    tagline: 'Complete system visibility',
+    description: 'A visual schematic detailing every webhook, automation branch, calendar connection, and tag so you always own full documentation of your intellectual property.',
+    iconName: 'Layers',
+    badge: 'Full Blueprint'
+  },
+  {
+    title: '30-Day Launch Warranty',
+    tagline: 'Reliability guaranteed',
+    description: 'Direct Slack/email support for 30 days after launch to monitor live leads, fine-tune messaging, and ensure your system runs smoothly under real-world traffic.',
+    iconName: 'ShieldCheck',
+    badge: '30-Day Support'
+  }
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 'test-1',
+    quote: "Jemuel completely transformed our agency's onboarding. What used to take us 3-4 days of manual setup per new client now launches in under 15 minutes. The video walkthroughs and team SOPs he delivered made training our staff completely seamless.",
+    author: 'Marcus Vance',
+    role: 'Founder & Managing Partner',
+    company: 'Apex Growth Marketing',
+    metric: '3-4 Days → 15 Min',
+    metricLabel: 'Client Onboarding Time',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 'test-2',
+    quote: 'Our biggest issue was losing leads after hours. Jemuel engineered an automated SMS speed-to-lead workflow that replies in under 30 seconds and books calls right onto our calendar. Our patient show-up rate jumped from 58% to 84% in month one.',
+    author: 'Dr. Sarah Jenkins',
+    role: 'Clinical Director',
+    company: 'Horizon Health & Wellness',
+    metric: '58% → 84%',
+    metricLabel: 'Appointment Show-Up Rate',
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=80'
+  },
+  {
+    id: 'test-3',
+    quote: 'Jemuel brings true software engineering discipline to GoHighLevel. He connected our Stripe billing directly to GHL sub-accounts and automated all contract signing. Saved our operations team at least 25 hours every week. Outstanding work.',
+    author: 'Liam Thorne',
+    role: 'Operations Lead',
+    company: 'ScaleFlow Media',
+    metric: '25+ Hours/Wk',
+    metricLabel: 'Manual Admin Saved',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80'
+  }
+];
+
+export const CORE_SERVICES: ServiceCategoryItem[] = [
+  {
+    id: 'automations',
+    title: 'Automations & Workflows',
+    headline: 'Hands-off systems running 24/7 without breaking',
+    tagline: 'Speed-to-lead, multi-channel nurture, and zero-touch operations',
+    badge: 'Core Specialty',
+    iconName: 'Zap',
+    summary: 'Custom GoHighLevel workflows designed to capture leads, follow up within 45 seconds via SMS/Email, handle scheduling, and trigger internal team alerts.',
+    highlights: [
+      '< 45-Second Speed-to-Lead SMS & Email sequences',
+      'AI conversational qualification & calendar booking',
+      'Multi-touch appointment reminders (SMS, Email, Ringless Voicemail)',
+      'A2P 10DLC compliance and deliverability hardening',
+      'Post-appointment follow-up & 5-star review generation'
+    ],
+    bestFor: 'Agencies, clinics, and service businesses losing leads to slow follow-up.',
+    deliverablesSnippet: 'Turnkey workflows + Loom video walkthrough + SOP'
+  },
+  {
+    id: 'ai-tools',
+    title: 'AI Products & Tools',
+    headline: 'Intelligent assistants that qualify, converse & route',
+    tagline: 'Custom AI conversational bots, voice routing & data intelligence',
+    badge: 'High Impact',
+    iconName: 'Bot',
+    summary: 'Bespoke conversational AI agents integrated with GoHighLevel conversation streams and internal knowledge bases to answer inquiries, qualify prospects, and book calendar slots 24/7.',
+    highlights: [
+      '24/7 Conversational AI for inbound website & SMS inquiries',
+      'Dynamic knowledge base ingestion (pricing, FAQs, scheduling logic)',
+      'Automated qualification scoring before handing to sales reps',
+      'Instant calendar booking with real-time conflict avoidance',
+      'Fallback rules to alert human staff when complex questions arise'
+    ],
+    bestFor: 'Businesses wanting after-hours lead conversion and automated tier-1 qualification.',
+    deliverablesSnippet: 'Trained AI prompt system + tested edge cases + staff escalation flow'
+  },
+  {
+    id: 'crm-architecture',
+    title: 'CRM & GoHighLevel Architecture',
+    headline: 'Custom GHL setups engineered beyond default limits',
+    tagline: 'Pipelines, custom values, snapshots, and sub-account architecture',
+    badge: 'Enterprise Grade',
+    iconName: 'Cpu',
+    summary: 'Deep architectural builds for GoHighLevel. We audit accounts against internal APIs, build scalable snapshots, configure custom fields and values, and organize clean sales pipelines.',
+    highlights: [
+      'Turnkey agency snapshots with 15-minute client onboarding',
+      'Custom Values and Custom Fields architecture for instant cloning',
+      'Clean pipeline stages with stage-gate automation rules',
+      'Two-way sync with external databases and accounting tools',
+      'SaaS Mode configuration with Stripe billing automation'
+    ],
+    bestFor: 'Agencies scaling past 10+ sub-accounts and founders needing institutional-grade CRM.',
+    deliverablesSnippet: 'Master snapshot + custom fields schema + onboarding checklist'
+  },
+  {
+    id: 'websites-funnels',
+    title: 'Websites & Funnels',
+    headline: 'Clean, high-converting digital storefronts that load instantly',
+    tagline: 'Landing pages, interactive calculators, and 2-step checkout',
+    badge: 'Conversion Focused',
+    iconName: 'Layout',
+    summary: 'Beautiful landing pages, funnels, and full websites designed and built end-to-end inside GoHighLevel with custom JavaScript widgets, calculators, and high-converting copy hierarchy.',
+    highlights: [
+      'Mobile-first responsive architecture loading in under 1 second',
+      'Custom interactive quote estimators and price calculators',
+      'High-converting 2-step order forms with one-click upsells',
+      'Direct calendar booking embeds without iframe glitching',
+      'Accurate ad pixel & conversion tracking (Meta, Google, TikTok)'
+    ],
+    bestFor: 'Brands wanting a modern, boutique aesthetic with conversion-driven layouts.',
+    deliverablesSnippet: 'Custom GHL funnel + mobile optimization + live tracking QA'
+  },
+  {
+    id: 'consulting',
+    title: 'Systems Consulting & Audits',
+    headline: 'Strategic roadmap to find bottlenecks and stop revenue leaks',
+    tagline: '1-on-1 discovery, workflow auditing, and systems roadmapping',
+    badge: 'Direct Advisory',
+    iconName: 'Sparkles',
+    summary: 'A deep forensic audit of your current tech stack and CRM operations. We uncover lost revenue leaks, duplicate software costs, and blueprint the exact automations needed to scale.',
+    highlights: [
+      'Forensic audit of your current CRM, workflows, and lead leaks',
+      'Tool consolidation plan to reduce redundant SaaS subscriptions',
+      'Complete architecture blueprint with visual flowcharts',
+      'Team delegation strategy and standardized operating manuals',
+      'Direct advisory via Slack or dedicated sprint calls'
+    ],
+    bestFor: 'Founders and operators who feel overwhelmed by messy, fragmented tools.',
+    deliverablesSnippet: 'Comprehensive audit report + visual diagram + actionable prioritized roadmap'
   }
 ];

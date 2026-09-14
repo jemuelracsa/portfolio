@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { Mail, Send, CheckCircle2, Copy, Check, Github, MapPin, Clock, MessageSquare, AlertCircle } from 'lucide-react';
+import { Mail, Send, CheckCircle2, Copy, Check, Github, MapPin, Clock, MessageSquare, AlertCircle, Calendar, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { ContactMessage } from '../types';
 
 export const ContactSection: React.FC = () => {
+  const [activeMode, setActiveMode] = useState<'message' | 'call'>('call');
   const [formData, setFormData] = useState<ContactMessage>({
     name: '',
     email: '',
     subject: '',
-    inquiryType: 'Full-Time Employment',
+    inquiryType: 'GoHighLevel Setup & Workflows',
     message: '',
   });
 
@@ -190,9 +191,84 @@ export const ContactSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Contact Form (Col 7) */}
+          {/* Right Column: Contact Form / Call Scheduler (Col 7) */}
           <div className="lg:col-span-7">
-            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+            {/* Tab Selector: Book a Free Call vs Direct Message */}
+            <div className="flex items-center gap-2 mb-4 p-1.5 bg-slate-900/90 border border-slate-800 rounded-2xl">
+              <button
+                type="button"
+                onClick={() => setActiveMode('call')}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
+                  activeMode === 'call'
+                    ? 'bg-cyan-400 text-slate-950 shadow-md font-bold'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                <Calendar className="w-4 h-4" />
+                <span>Book a Free Call</span>
+                <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-950/20 text-slate-900 font-bold">
+                  Fastest
+                </span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveMode('message')}
+                className={`flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
+                  activeMode === 'message'
+                    ? 'bg-cyan-400 text-slate-950 shadow-md font-bold'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                <Mail className="w-4 h-4" />
+                <span>Send a Message</span>
+              </button>
+            </div>
+
+            {activeMode === 'call' ? (
+              <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 font-mono text-xs font-semibold">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>30-MIN STRATEGY & DISCOVERY SESSION</span>
+                  </div>
+                  <span className="text-xs font-mono text-slate-400">100% Free</span>
+                </div>
+
+                <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-2">
+                  Get on a call with me and let's talk it through.
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+                  We'll audit your current lead handling and tech stack, map out where leads or hours are slipping through the cracks, and design the exact GoHighLevel architecture your business needs to scale.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                  <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800 flex items-start gap-2.5 text-xs text-slate-300">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                    <span>No aggressive sales pitch — pure engineering & automation advice</span>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800 flex items-start gap-2.5 text-xs text-slate-300">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <span>Instant calendar invite with Google Meet link delivered</span>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-950/90 border border-cyan-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div>
+                    <span className="text-xs font-bold text-white block">Ready to pick a time on my calendar?</span>
+                    <span className="text-[11px] text-slate-400">Available across US, UK, Australia & Asia-Pacific timezones</span>
+                  </div>
+
+                  <a
+                    href={`mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent('Booking a 30-Min Systems Call')}&body=${encodeURIComponent("Hi Jemuel,\n\nI'd like to book a 30-minute discovery call to discuss our GoHighLevel automations and systems.\n\nMy preferred days/times are:\n\nLooking forward to speaking!")}`}
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-sky-400 hover:from-cyan-300 hover:to-sky-300 text-slate-950 font-bold text-xs shadow-lg shadow-cyan-500/25 transition-all shrink-0 active:scale-98"
+                  >
+                    <span>Request Discovery Time</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            ) : (
+              <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
               {isSuccess ? (
                 <div className="text-center py-10 space-y-4 animate-in fade-in duration-300">
                   <div className="w-14 h-14 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center mx-auto text-emerald-400">
@@ -358,6 +434,7 @@ export const ContactSection: React.FC = () => {
                 </form>
               )}
             </div>
+            )}
           </div>
         </div>
       </div>

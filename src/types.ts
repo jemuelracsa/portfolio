@@ -53,3 +53,44 @@ export interface ContactMessage {
   inquiryType: 'Full-Time Employment' | 'GoHighLevel Setup & Workflows' | 'GHL Snapshot & SaaS Mode' | 'API & Custom Webhook Integration' | 'Contract / Consulting' | 'General Question';
   message: string;
 }
+
+export interface Testimonial {
+  id: string;
+  quote: string;
+  author: string;
+  role: string;
+  company: string;
+  metric: string;
+  metricLabel: string;
+  avatar?: string;
+}
+
+export interface ProcessStep {
+  step: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  deliverables: string[];
+  iconName: string;
+}
+
+export interface BuildDeliverable {
+  title: string;
+  tagline: string;
+  description: string;
+  iconName: string;
+  badge: string;
+}
+
+export interface ServiceCategoryItem {
+  id: string;
+  title: string;
+  headline: string;
+  tagline: string;
+  badge: string;
+  iconName: string;
+  summary: string;
+  highlights: string[];
+  bestFor: string;
+  deliverablesSnippet: string;
+}

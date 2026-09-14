@@ -16,7 +16,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenTerminal }) 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = ['hero', 'ghl-showcase', 'projects', 'skills', 'experience', 'contact'];
+      const sections = ['hero', 'services', 'ghl-showcase', 'process', 'projects', 'reviews', 'experience', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -37,11 +37,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenTerminal }) 
   }, []);
 
   const navLinks = [
-    { label: 'GoHighLevel', href: '#ghl-showcase', id: 'ghl-showcase' },
-    { label: 'Projects', href: '#projects', id: 'projects' },
-    { label: 'Skills', href: '#skills', id: 'skills' },
+    { label: 'What I Build', href: '#services', id: 'services' },
+    { label: 'Automations', href: '#ghl-showcase', id: 'ghl-showcase' },
+    { label: 'How I Work', href: '#process', id: 'process' },
+    { label: 'Case Studies', href: '#projects', id: 'projects' },
+    { label: 'Reviews', href: '#reviews', id: 'reviews' },
     { label: 'Experience', href: '#experience', id: 'experience' },
-    { label: 'Contact', href: '#contact', id: 'contact' },
+    { label: 'Book a Call', href: '#contact', id: 'contact' },
   ];
 
   return (
