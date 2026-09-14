@@ -86,11 +86,37 @@ export const ContactSection: React.FC = () => {
           {/* Left Column: Contact Direct Info (Col 5) */}
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
-              <h3 className="text-lg font-bold text-white mb-2">
+              {/* Profile Card Info */}
+              <div className="flex items-center gap-4 pb-5 mb-5 border-b border-slate-800/80">
+                <div className="relative shrink-0">
+                  <img
+                    src={PERSONAL_INFO.avatar || '/profile.jpg'}
+                    alt={PERSONAL_INFO.name}
+                    className="w-14 h-14 rounded-full object-cover border-2 border-cyan-400/80 shadow-md"
+                    onError={(e) => {
+                      e.currentTarget.src = 'https://github.com/jemuelracsa.png';
+                    }}
+                  />
+                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-400 border-2 border-slate-900" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-white">
+                    {PERSONAL_INFO.name}
+                  </h3>
+                  <p className="text-xs text-cyan-400 font-mono">
+                    {PERSONAL_INFO.title}
+                  </p>
+                  <span className="text-[11px] text-slate-400">
+                    Independent Specialist • Available
+                  </span>
+                </div>
+              </div>
+
+              <h3 className="text-sm font-bold text-white mb-2">
                 Direct Communication
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
-                Feel free to email me directly or submit the contact form. I typically respond to all technical inquiries and recruiter reach-outs within 24 hours.
+                Feel free to email me directly or submit the contact form. I typically respond to all GoHighLevel agency inquiries, technical roles, and client reach-outs within 24 hours.
               </p>
 
               {/* Email Copy Card */}
@@ -156,10 +182,10 @@ export const ContactSection: React.FC = () => {
             <div className="p-5 bg-gradient-to-br from-slate-900 to-slate-950 border border-cyan-500/20 rounded-2xl">
               <div className="flex items-center gap-2 text-cyan-400 text-xs font-mono font-semibold mb-1">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                HIRING MANAGER NOTE
+                EMPLOYER & CLIENT NOTE
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
-                I am actively considering full-time senior / lead engineering positions (remote, hybrid, or relocation) where I can make an immediate architectural and velocity impact.
+                Available for full-time GoHighLevel Specialist roles, Agency CRM Architecture, custom API v2 integrations, and turnkey snapshot developments. Rapid onboarding and reliable delivery guaranteed.
               </p>
             </div>
           </div>
@@ -265,9 +291,11 @@ export const ContactSection: React.FC = () => {
                         }
                         className="w-full px-3.5 py-2.5 bg-slate-950/70 border border-slate-800 rounded-lg text-xs sm:text-sm text-slate-200 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition-colors"
                       >
-                        <option value="Full-Time Employment">Full-Time Employment</option>
+                        <option value="Full-Time Employment">Full-Time Role (GHL / Full-Stack)</option>
+                        <option value="GoHighLevel Workflows & Setup">GoHighLevel Workflows & Setup</option>
+                        <option value="Custom Snapshot / SaaS Mode">Custom Snapshot / SaaS Mode</option>
+                        <option value="GHL API v2 & Custom Integrations">GHL API v2 & Custom Integrations</option>
                         <option value="Contract / Project">Contract / Consulting</option>
-                        <option value="Technical Collaboration">Technical Collaboration</option>
                         <option value="General Question">General Inquiry</option>
                       </select>
                     </div>

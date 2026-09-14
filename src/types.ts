@@ -4,7 +4,7 @@ export interface Project {
   tagline: string;
   description: string;
   longDescription: string;
-  category: 'all' | 'fullstack' | 'distributed' | 'frontend' | 'opensource';
+  category: 'all' | 'ghl' | 'fullstack' | 'distributed' | 'frontend' | 'opensource';
   tags: string[];
   metrics?: { label: string; value: string }[];
   architectureHighlights: string[];
@@ -50,6 +50,6 @@ export interface ContactMessage {
   name: string;
   email: string;
   subject: string;
-  inquiryType: 'Full-Time Employment' | 'Contract / Project' | 'Technical Collaboration' | 'General Question';
+  inquiryType: 'Full-Time Employment' | 'GoHighLevel Setup & Workflows' | 'GHL Snapshot & SaaS Mode' | 'API & Custom Webhook Integration' | 'Contract / Consulting' | 'General Question';
   message: string;
 }

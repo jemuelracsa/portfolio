@@ -1,20 +1,22 @@
 import React from 'react';
-import { Cpu, Server, Layout, Database, Cloud, Code2, CheckCircle, ShieldCheck } from 'lucide-react';
+import { Cpu, Server, Layout, Database, Cloud, Code2, CheckCircle, ShieldCheck, Workflow } from 'lucide-react';
 import { SKILL_CATEGORIES, PHILOSOPHY_POINTS } from '../data/portfolioData';
 
 export const SkillsSection: React.FC = () => {
   const getIcon = (iconName: string) => {
     switch (iconName) {
+      case 'Workflow':
+        return <Workflow className="w-5 h-5 text-cyan-400" />;
       case 'Code2':
-        return <Code2 className="w-5 h-5 text-cyan-400" />;
+        return <Code2 className="w-5 h-5 text-blue-400" />;
       case 'Server':
-        return <Server className="w-5 h-5 text-blue-400" />;
+        return <Server className="w-5 h-5 text-sky-400" />;
       case 'Layout':
-        return <Layout className="w-5 h-5 text-sky-400" />;
+        return <Layout className="w-5 h-5 text-indigo-400" />;
       case 'Database':
         return <Database className="w-5 h-5 text-emerald-400" />;
       case 'Cloud':
-        return <Cloud className="w-5 h-5 text-indigo-400" />;
+        return <Cloud className="w-5 h-5 text-purple-400" />;
       default:
         return <Cpu className="w-5 h-5 text-cyan-400" />;
     }

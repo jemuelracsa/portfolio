@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { StatsBar } from './components/StatsBar';
+import { GHLShowcase } from './components/GHLShowcase';
 import { ProjectsSection } from './components/ProjectsSection';
 import { ProjectModal } from './components/ProjectModal';
 import { SkillsSection } from './components/SkillsSection';
@@ -32,6 +33,7 @@ export default function App() {
           onOpenTerminal={() => setIsTerminalOpen(true)}
         />
         <StatsBar />
+        <GHLShowcase />
         <ProjectsSection onSelectProject={(p) => setSelectedProject(p)} />
         <SkillsSection />
         <ExperienceSection />

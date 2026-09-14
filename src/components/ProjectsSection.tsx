@@ -32,8 +32,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
 
   const tabs = [
     { id: 'all', label: 'All Projects' },
+    { id: 'ghl', label: 'GoHighLevel & Automations' },
     { id: 'distributed', label: 'Distributed & Backend' },
-    { id: 'fullstack', label: 'Full-Stack' },
     { id: 'frontend', label: 'Frontend & UI' },
     { id: 'opensource', label: 'Open Source' },
   ];
@@ -121,8 +121,14 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                 {/* Card Top: Category & Role */}
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-slate-800 text-cyan-400 border border-slate-700/60 font-medium">
-                      {project.category.toUpperCase()}
+                    <span
+                      className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full border font-medium ${
+                        project.category === 'ghl'
+                          ? 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30'
+                          : 'bg-slate-800 text-slate-300 border-slate-700/60'
+                      }`}
+                    >
+                      {project.category === 'ghl' ? 'GOHIGHLEVEL & AUTOMATION' : project.category.toUpperCase()}
                     </span>
 
                     {project.stars && (

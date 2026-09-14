@@ -16,7 +16,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenTerminal }) 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = ['hero', 'projects', 'skills', 'experience', 'contact'];
+      const sections = ['hero', 'ghl-showcase', 'projects', 'skills', 'experience', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -37,6 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenTerminal }) 
   }, []);
 
   const navLinks = [
+    { label: 'GoHighLevel', href: '#ghl-showcase', id: 'ghl-showcase' },
     { label: 'Projects', href: '#projects', id: 'projects' },
     { label: 'Skills', href: '#skills', id: 'skills' },
     { label: 'Experience', href: '#experience', id: 'experience' },
@@ -59,8 +60,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenTerminal }) 
           id="nav-logo"
           className="group flex items-center gap-2.5 text-slate-100 focus:outline-none"
         >
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-mono font-bold text-slate-950 shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-200">
-            JR
+          <div className="relative w-9 h-9 rounded-full overflow-hidden border border-cyan-400/60 shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-200 shrink-0 bg-slate-900">
+            <img
+              src={PERSONAL_INFO.avatar || '/profile.jpg'}
+              alt={PERSONAL_INFO.name}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.currentTarget.src = 'https://github.com/jemuelracsa.png';
+              }}
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-base tracking-tight text-white group-hover:text-cyan-400 transition-colors">

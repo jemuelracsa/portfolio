@@ -129,36 +129,49 @@ ${EDUCATION_DATA.map((e) => `- ${e.degree}, ${e.school} (${e.period})`).join('\n
         {/* Resume Content Body */}
         <div className="flex-1 overflow-y-auto p-6 sm:p-10 space-y-8 bg-slate-950 text-slate-200 print:bg-white print:text-black">
           {/* Header */}
-          <div className="border-b border-slate-800 pb-6">
-            <h1 className="text-3xl font-extrabold text-white tracking-tight">
-              {PERSONAL_INFO.name}
-            </h1>
-            <p className="text-lg font-semibold text-cyan-400 mt-0.5">
-              {PERSONAL_INFO.title}
-            </p>
+          <div className="border-b border-slate-800 pb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div className="space-y-1">
+              <h1 className="text-3xl font-extrabold text-white tracking-tight print:text-black">
+                {PERSONAL_INFO.name}
+              </h1>
+              <p className="text-lg font-semibold text-cyan-400 mt-0.5 print:text-blue-700">
+                {PERSONAL_INFO.title}
+              </p>
 
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-3 text-xs text-slate-400 font-mono">
-              <span className="flex items-center gap-1.5">
-                <Mail className="w-3.5 h-3.5 text-cyan-400" />
-                {PERSONAL_INFO.email}
-              </span>
-              <a
-                href={PERSONAL_INFO.github}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-1.5 hover:text-white"
-              >
-                <Github className="w-3.5 h-3.5 text-cyan-400" />
-                github.com/{PERSONAL_INFO.githubUsername}
-              </a>
-              <span className="flex items-center gap-1.5">
-                <Globe className="w-3.5 h-3.5 text-cyan-400" />
-                {PERSONAL_INFO.website}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-cyan-400" />
-                {PERSONAL_INFO.location}
-              </span>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-xs text-slate-400 font-mono print:text-slate-700">
+                <span className="flex items-center gap-1.5">
+                  <Mail className="w-3.5 h-3.5 text-cyan-400 print:text-slate-800" />
+                  {PERSONAL_INFO.email}
+                </span>
+                <a
+                  href={PERSONAL_INFO.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1.5 hover:text-white print:text-slate-800"
+                >
+                  <Github className="w-3.5 h-3.5 text-cyan-400 print:text-slate-800" />
+                  github.com/{PERSONAL_INFO.githubUsername}
+                </a>
+                <span className="flex items-center gap-1.5">
+                  <Globe className="w-3.5 h-3.5 text-cyan-400 print:text-slate-800" />
+                  {PERSONAL_INFO.website}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-cyan-400 print:text-slate-800" />
+                  {PERSONAL_INFO.location}
+                </span>
+              </div>
+            </div>
+
+            <div className="shrink-0 hidden sm:block print:block">
+              <img
+                src={PERSONAL_INFO.avatar || '/profile.jpg'}
+                alt={PERSONAL_INFO.name}
+                className="w-20 h-20 rounded-xl object-cover border-2 border-slate-800 print:border-slate-300 shadow-md"
+                onError={(e) => {
+                  e.currentTarget.src = 'https://github.com/jemuelracsa.png';
+                }}
+              />
             </div>
           </div>
 

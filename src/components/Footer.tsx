@@ -15,11 +15,16 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <a
               href="#hero"
-              className="flex items-center gap-2 text-white font-bold text-base mb-1"
+              className="flex items-center gap-2.5 text-white font-bold text-base mb-1"
             >
-              <span className="w-7 h-7 rounded bg-gradient-to-br from-cyan-500 to-blue-600 text-slate-950 font-mono flex items-center justify-center text-xs font-black">
-                JR
-              </span>
+              <img
+                src={PERSONAL_INFO.avatar || '/profile.jpg'}
+                alt={PERSONAL_INFO.name}
+                className="w-7 h-7 rounded-full object-cover border border-cyan-500/50"
+                onError={(e) => {
+                  e.currentTarget.src = 'https://github.com/jemuelracsa.png';
+                }}
+              />
               <span>{PERSONAL_INFO.name}</span>
             </a>
             <p className="text-slate-500 max-w-sm">

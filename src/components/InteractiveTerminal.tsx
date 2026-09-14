@@ -55,7 +55,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
 
   if (!isOpen) return null;
 
-  const quickCommands = ['help', 'whoami', 'skills', 'projects', 'hire', 'clear'];
+  const quickCommands = ['help', 'ghl', 'skills', 'projects', 'hire', 'clear'];
 
   const executeCommand = (cmdStr: string) => {
     const trimmed = cmdStr.trim().toLowerCase();
@@ -74,6 +74,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
           <div className="space-y-1 text-slate-300">
             <p className="text-cyan-300 font-semibold mb-1">Available Commands:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs">
+              <div><span className="text-cyan-400 font-mono">ghl</span> — GoHighLevel CRM & automations</div>
               <div><span className="text-cyan-400 font-mono">whoami</span> — Summary biography</div>
               <div><span className="text-cyan-400 font-mono">skills</span> — Technical capabilities</div>
               <div><span className="text-cyan-400 font-mono">projects</span> — Key production systems</div>
@@ -83,6 +84,22 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
               <div><span className="text-cyan-400 font-mono">github</span> — Open GitHub profile</div>
               <div><span className="text-cyan-400 font-mono">clear</span> — Wipe terminal screen</div>
             </div>
+          </div>
+        );
+        break;
+
+      case 'ghl':
+      case 'gohighlevel':
+        outputContent = (
+          <div className="space-y-1.5 text-slate-300 text-xs">
+            <p className="text-cyan-300 font-semibold flex items-center gap-1.5">
+              ⚡ GoHighLevel (GHL) Specialist Architecture:
+            </p>
+            <p className="text-slate-300">• <strong className="text-white">Workflows & Automations:</strong> Multi-branch speed-to-lead (&lt;45s), Conversation AI, SMS/Email/Voicemail</p>
+            <p className="text-slate-300">• <strong className="text-white">Turnkey Snapshots:</strong> 15+ sub-accounts deployed with pre-wired pipelines & custom values</p>
+            <p className="text-slate-300">• <strong className="text-white">GHL API v2:</strong> Custom OAuth, webhook listener microservices, external database sync</p>
+            <p className="text-slate-300">• <strong className="text-white">Deliverability:</strong> A2P 10DLC Brand/Campaign registration, DKIM/DMARC/SPF, 99.8% inbox rate</p>
+            <p className="text-cyan-400 font-mono mt-1">&gt; Type 'hire' or 'contact' to discuss a GoHighLevel role or project.</p>
           </div>
         );
         break;
