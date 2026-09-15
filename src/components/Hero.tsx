@@ -60,13 +60,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenTerminal }) => {
                 </span>
               </h1>
               <p className="mt-3 text-lg sm:text-xl font-medium text-slate-300">
-                Hi, I'm <strong className="text-white font-bold">{PERSONAL_INFO.name}</strong> — Former Lead GHL Engineer at Peter Swain Inc, now building bulletproof automations for high-growth businesses.
+                Hi, I'm <strong className="text-white font-bold">{PERSONAL_INFO.name}</strong>, a GoHighLevel systems architect building reliable, zero-touch automations for high-growth businesses.
               </p>
             </div>
 
             {/* Value Proposition Description */}
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
-              Stop losing revenue to slow replies and messy spreadsheets. I engineer custom <strong className="text-cyan-400 font-semibold">GoHighLevel CRM workflows</strong>, automated booking pipelines, and custom API integrations that reply in under 45 seconds — <strong className="text-slate-100 font-semibold">with video walkthroughs and team SOPs included on every build.</strong>
+              Stop losing revenue to slow replies and messy spreadsheets. I engineer custom <strong className="text-cyan-400 font-semibold">GoHighLevel CRM workflows</strong>, automated booking pipelines, and custom API integrations that reply in under 45 seconds, <strong className="text-slate-100 font-semibold">with video walkthroughs and team SOPs included on every build.</strong>
             </p>
 
             {/* Xander Roque Style Feature Pills */}
@@ -190,7 +190,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenTerminal }) => {
                     Lead Systems & Automation Architect
                   </p>
                   <p className="text-[10px] text-slate-400">
-                    Former Lead at Peter Swain Inc • 5+ Years Exp
+                    GoHighLevel Specialist • 5+ Years Exp
                   </p>
                 </div>
               </div>

@@ -40,7 +40,7 @@ export const WhatIBuildSection: React.FC = () => {
             Systems & Infrastructure For High-Growth Teams
           </h2>
           <p className="text-slate-300 text-sm sm:text-base mt-3 leading-relaxed">
-            From speed-to-lead pipelines and custom GoHighLevel CRM architecture to conversational AI and custom integrations — engineered end-to-end to eliminate manual work and drive revenue.
+            From speed-to-lead pipelines and custom GoHighLevel CRM architecture to conversational AI and custom integrations, engineered end-to-end to eliminate manual work and drive revenue.
           </p>
         </div>
 

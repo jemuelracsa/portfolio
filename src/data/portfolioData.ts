@@ -3,7 +3,7 @@ import { Project, SkillCategory, ExperienceItem, EducationItem, Testimonial, Pro
 export const PERSONAL_INFO = {
   name: 'Jemuel Racsa',
   title: 'GoHighLevel Expert & Automation Specialist',
-  tagline: 'I help businesses turn leads into booked calls and happy clients using GoHighLevel — 100% on autopilot.',
+  tagline: 'I help businesses turn leads into booked calls and happy clients using GoHighLevel, completely on autopilot.',
   email: 'jemuel.racsa@gmail.com',
   github: 'https://github.com/jemuelracsa',
   githubUsername: 'jemuelracsa',
@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
   yearsOfExperience: '5+',
   availability: 'Available immediately',
   avatar: './profile.jpg',
-  bio: "Hi, I'm Jemuel! I help agencies and business owners stop losing leads and start booking more appointments with GoHighLevel. For over 5 years, I've built simple, reliable systems that text and email leads in seconds, book calendar appointments, and save teams 20+ hours every week. Former Lead GoHighLevel Automation Engineer at Peter Swain Inc (2022 — 2024), now working directly with clients worldwide.",
+  bio: "Hi, I'm Jemuel. I help agencies and business owners stop losing leads and start booking more appointments with GoHighLevel. For over 5 years, I've built simple, reliable systems that text and email leads in seconds, book calendar appointments, and save teams 20+ hours every week, now working directly with clients worldwide.",
 };
 
 export interface GHLPillar {
@@ -381,7 +381,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     id: 'exp-1',
     role: 'Independent GoHighLevel Specialist & Automation Consultant',
     company: 'Independent Consulting / Open to Clients & Roles',
-    period: '2024 — Present',
+    period: '2024 - Present',
     location: 'Remote Worldwide',
     type: 'Available for Full-Time & Projects',
     summary: 'Working directly with marketing agencies, clinic owners, and growing businesses to build simple, reliable GoHighLevel systems that turn leads into booked calls.',
@@ -396,8 +396,8 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
     id: 'exp-2',
     role: 'Lead GoHighLevel & Automation Engineer',
-    company: 'Peter Swain Inc (Previous Role)',
-    period: '2022 — 2024',
+    company: 'Growth Systems & CRM Consultancy',
+    period: '2022 - 2024',
     location: 'Remote',
     type: 'Full-time (Concluded)',
     summary: 'Led the GoHighLevel CRM setup, turnkey agency snapshots, lead generation funnels, and automated booking systems.',
@@ -414,7 +414,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     id: 'exp-3',
     role: 'Full-Stack Software & Integration Engineer',
     company: 'Logistics & Distributed Cloud Services',
-    period: '2020 — 2022',
+    period: '2020 - 2022',
     location: 'Hybrid',
     type: 'Full-time',
     summary: 'Built real-time messaging systems, automated dispatch notifications, and responsive merchant portals.',
@@ -429,7 +429,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     id: 'exp-4',
     role: 'Software Developer & Web Specialist',
     company: 'Technology Solutions & Client Portals',
-    period: '2018 — 2020',
+    period: '2018 - 2020',
     location: 'On-site',
     type: 'Full-time',
     summary: 'Developed dynamic web applications, automated client intake pipelines, and customer portals.',

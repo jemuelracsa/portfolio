@@ -74,15 +74,15 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
           <div className="space-y-1 text-slate-300">
             <p className="text-cyan-300 font-semibold mb-1">Available Commands:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs">
-              <div><span className="text-cyan-400 font-mono">ghl</span> — GoHighLevel CRM & automations</div>
-              <div><span className="text-cyan-400 font-mono">whoami</span> — Summary biography</div>
-              <div><span className="text-cyan-400 font-mono">skills</span> — Technical capabilities</div>
-              <div><span className="text-cyan-400 font-mono">projects</span> — Key production systems</div>
-              <div><span className="text-cyan-400 font-mono">contact</span> — Reach out / email</div>
-              <div><span className="text-cyan-400 font-mono">resume</span> — Open interactive resume</div>
-              <div><span className="text-cyan-400 font-mono">hire</span> — Employment availability</div>
-              <div><span className="text-cyan-400 font-mono">github</span> — Open GitHub profile</div>
-              <div><span className="text-cyan-400 font-mono">clear</span> — Wipe terminal screen</div>
+              <div><span className="text-cyan-400 font-mono">ghl</span>: GoHighLevel CRM & automations</div>
+              <div><span className="text-cyan-400 font-mono">whoami</span>: Summary biography</div>
+              <div><span className="text-cyan-400 font-mono">skills</span>: Technical capabilities</div>
+              <div><span className="text-cyan-400 font-mono">projects</span>: Key production systems</div>
+              <div><span className="text-cyan-400 font-mono">contact</span>: Reach out / email</div>
+              <div><span className="text-cyan-400 font-mono">resume</span>: Open interactive resume</div>
+              <div><span className="text-cyan-400 font-mono">hire</span>: Employment availability</div>
+              <div><span className="text-cyan-400 font-mono">github</span>: Open GitHub profile</div>
+              <div><span className="text-cyan-400 font-mono">clear</span>: Wipe terminal screen</div>
             </div>
           </div>
         );
@@ -107,7 +107,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({
       case 'whoami':
         outputContent = (
           <div className="space-y-1 text-slate-300">
-            <p><span className="text-cyan-400 font-bold">{PERSONAL_INFO.name}</span> — {PERSONAL_INFO.title}</p>
+            <p><span className="text-cyan-400 font-bold">{PERSONAL_INFO.name}</span> | {PERSONAL_INFO.title}</p>
             <p className="text-slate-400 text-xs">{PERSONAL_INFO.bio}</p>
             <p className="text-emerald-400 text-xs mt-1">Status: {PERSONAL_INFO.status}</p>
           </div>

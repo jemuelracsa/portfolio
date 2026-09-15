@@ -32,7 +32,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
   };
 
   const handleCopyMarkdown = () => {
-    const markdown = `# ${PERSONAL_INFO.name} — ${PERSONAL_INFO.title}
+    const markdown = `# ${PERSONAL_INFO.name} | ${PERSONAL_INFO.title}
 Email: ${PERSONAL_INFO.email} | GitHub: ${PERSONAL_INFO.github} | Location: ${PERSONAL_INFO.location}
 
 ## SUMMARY
@@ -43,7 +43,7 @@ ${SKILL_CATEGORIES.map((c) => `- **${c.category}**: ${c.skills.map((s) => s.name
 
 ## PROFESSIONAL EXPERIENCE
 ${EXPERIENCE_DATA.map(
-  (exp) => `### ${exp.role} — ${exp.company} (${exp.period})
+  (exp) => `### ${exp.role} | ${exp.company} (${exp.period})
 ${exp.summary}
 ${exp.bulletPoints.map((b) => `- ${b}`).join('\n')}
 Tech Stack: ${exp.technologies.join(', ')}
